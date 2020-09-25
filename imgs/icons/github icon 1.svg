@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="83" height="85" viewBox="0 0 83 85">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #feba70;
+      }
+
+      .cls-2 {
+        fill: #fff;
+        fill-rule: evenodd;
+      }
+
+      .cls-3 {
+        filter: url(#Path_336);
+      }
+    </style>
+    <filter id="Path_336" x="0" y="0" width="83" height="85" filterUnits="userSpaceOnUse">
+      <feOffset dy="-2" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feFlood flood-color="#606060" flood-opacity="0.129"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="github_icon_1" data-name="github icon 1" transform="translate(7.5 9.5)">
+    <g class="cls-3" transform="matrix(1, 0, 0, 1, -7.5, -9.5)">
+      <path id="Path_336-2" data-name="Path 336" class="cls-1" d="M2,0H66a2,2,0,0,1,2,2V68a2,2,0,0,1-2,2H2a2,2,0,0,1-2-2V2A2,2,0,0,1,2,0Z" transform="translate(7.5 9.5)"/>
+    </g>
+    <path id="Path_333" data-name="Path 333" class="cls-2" d="M166.65,107.44c-16.748,0-30.33,14-30.33,31.266a31.2,31.2,0,0,0,20.744,29.663c1.518.286,2.071-.677,2.071-1.507,0-.743-.026-2.708-.041-5.318-8.437,1.89-10.217-4.19-10.217-4.19-1.38-3.612-3.369-4.573-3.369-4.573-2.754-1.94.209-1.9.209-1.9,3.045.221,4.646,3.22,4.646,3.22,2.706,4.779,7.1,3.4,8.828,2.6a6.762,6.762,0,0,1,1.925-4.18c-6.735-.789-13.817-3.47-13.817-15.451a12.294,12.294,0,0,1,3.123-8.389,11.551,11.551,0,0,1,.3-8.274s2.545-.841,8.34,3.205a27.939,27.939,0,0,1,15.187,0c5.791-4.046,8.333-3.205,8.333-3.205a11.555,11.555,0,0,1,.3,8.274A12.272,12.272,0,0,1,186,137.068c0,12.01-7.093,14.653-13.85,15.426,1.089.965,2.059,2.875,2.059,5.79,0,4.18-.037,7.552-.037,8.577,0,.835.547,1.808,2.086,1.5a31.2,31.2,0,0,0,20.727-29.659C196.985,121.437,183.4,107.44,166.65,107.44Z" transform="translate(-132.863 -103.044)"/>
+  </g>
+</svg>
