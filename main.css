@@ -1,5 +1,9 @@
 @import url(/fonts/Roboto/stylesheet.css);
 
+/**{
+    outline: 1px solid red;;
+}*/
+
 body{
     font-family: Roboto, Arial, Helvetica, sans-serif !important;
     font-weight: 400;
@@ -52,20 +56,7 @@ body{
     color: #3B3B3B;
 }
 
-.row {
-    /* margin-right: 0 !important; */
-    /* margin-left: 0 !important; */
-}
 
-.blue {
-    /* background-color: cadetblue; */
-    text-align: center;
-    margin-bottom: 25px;
-}
-
-.blue>a {
-    /* background-color: chartreuse; */
-}
 
 .red {
     /* background-color: brown; */
@@ -79,6 +70,8 @@ body{
 .pink {
     /* background-color: crimson; */
     text-align: center;
+    width: 140px;
+
 }
 
 .pink>button,
@@ -130,7 +123,6 @@ body{
 }
 
 
-#prof-pic {}
 
 .m-top-25 {
     margin-top: 25px;
@@ -155,7 +147,6 @@ body{
 .skills-section {
     z-index: 1;
     width: 100vw;
-    height: ;
     position: absolute;
 
 }
@@ -191,8 +182,6 @@ ul>li{
 vertical-align: top !important;
 padding: 0 2px;}
 
-#contact-card{
-}
 
 .works-previews {
     height: 200px;
@@ -224,6 +213,13 @@ padding: 0 2px;}
 }
 
 
+@media (min-width: 768px) {
+    .blue{
+        margin-left: 80px !important;
+        margin-right: 80px !important;
 
+    }
+
+}
 
 
