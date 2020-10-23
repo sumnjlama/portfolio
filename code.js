@@ -15,14 +15,20 @@ function openSite2() {
 function openSite3() {
     let openTripleBooster = window.open("https://www.behance.net/gallery/84703685/Triple-Booster-Design-project");
 }
+function openSite4() {
+    let openTripleBoosterPlus = window.open("https://www.behance.net/gallery/106544981/Triple-Booster-PLUS");
+}
+function openSite5() {
+    let openRawGold = window.open("https://www.behance.net/gallery/106547429/RAW-GOLD");
+}
 function openBehanceSite() {
-    let openTripleBooster = window.open("https://www.behance.net/sumanjlama");
+    let openBehance= window.open("https://www.behance.net/sumanjlama");
 }
 function openGithubSite() {
-    let openTripleBooster = window.open("https://github.com/sumnjlama");
+    let openGithub = window.open("https://github.com/sumnjlama");
 }
 function openResume() {
-    let openTripleBooster = window.open("/files/Resume.pdf");
+    let openResume = window.open("/files/Resume.pdf");
 }
 
 
