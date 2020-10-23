@@ -28,7 +28,7 @@ function openGithubSite() {
     let openGithub = window.open("https://github.com/sumnjlama");
 }
 function openResume() {
-    let openResume = window.open("/files/Resume.pdf");
+    let openResume = window.open("files/Resume.pdf");
 }
 
 
