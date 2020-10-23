@@ -8,217 +8,187 @@
     <title></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="../main.css">
-    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
-    <link rel="stylesheet" href="../fonts/Roboto/stylesheet.css">
+    <meta name="author" content="Suman J Lama">
+    <meta name="description" content="I am a multi-disciplinary media designer">
+
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="main.css">
+    <!-- BOOTSTRAP CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <!-- CUSTOM FONT: ROBOTO -->
+    <link rel="stylesheet" href="fonts/Roboto/stylesheet.css">
 </head>
 
 <body>
     <div class="container-fluid">
 
-        <div class="blue row top-row" style="margin-top: 40px;">
-            <div class=" col-12 col-md-6 mb-4 mb-md-0 text-center text-md-left">
-                <a href="index.html">Suman Lama</a>
+        <!-- TOP SECTION: TITLE AND NAV BUTTONS -->
+        <div class="blue row top-row justify-content-center" id="top-sect-wrapper" >
+            <div class=" col-12 col-md-5 mb-4 mb-md-0 text-center text-md-left pl-md-0">
+                <a class="" href="index.html" id="self-title">Suman Lama</a>
+
             </div>
-            <div class="col-12 col-md-6">
+            <div class="col-12 col-md-7">
+                <div class="row justify-content-around justify-content-md-end " style="height: 100%;">
+                    <div class="mr-md-4 align-self-center">
+                        <a href="works.html" class="pink nav-c roboto-300" style="color: white;">My Works</a></div>
+                    <div class="align-self-center">
+                        <a href="contact.html" class="pink nav-c roboto-300" style="color: white;">Contact Me</a></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- PROFILE IMAGE -->
+        <div class="text-center row m-top-1st-element">
+            <div class="col-12 d-flex justify-content-center">
+                <div class="text-center row justify-content-center max-wid pad-sides-15">
+                    <img class="b-radius-6 img-fluid" id="prof-pic" src="imgs/prof pic.jpg" alt="pics">
+                </div>
+            </div>
+        </div>
+
+
+        <!-- BIO SECTION -->
+        <div class="row justify-content-center m-top-small align-content-center " id="">
+            <div class="col-12 d-flex justify-content-center">
+                <div class="text-center row justify-content-center max-wid">
+                    <p class="text-center mb-0 pad-sides-15" id="self-bio"><span id="self-tagline">I am Suman Lama. <br> I am a multi-disciplinary digital media
+                        designer.</span></p> <p class="text-center mb-0 pad-sides-15 m-top-small">I am skilled in graphic and website designs and basic front-end development.
+                        I am passionate in creating digital contents and I relish the challenge of meeting my clients desires and
+                        their visions. I like my works to have the elements of creativity and practicality.
+                        <br>
+                        <br>
+                        You can see all of my best works <a href="works.html" style="color: #f89f41; font-weight: 400; text-decoration: underline;">here</a>.
+                        You can click <a onclick="openBehanceSite()" style="color: #f89f41; font-weight: 400; text-decoration: underline;">here</a> to see my branding works for the company, <a onclick="openSite1()" style="color: #f89f41; font-weight: 400; text-decoration: underline;">Jhr Naturecure</a>. I am the sole
+                        digital designer for the company and I am responsible for creating and publishing all of their
+                        graphics and digital promotions.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- SKILL AND RESUME SECTION -->
+        <div class="row justify-content-center" id="skills-wrapper">
+
+            <!-- BACKGROUND -->
+            <span class="primary-c skills-section shadow-up shadow-down skills-sect-home">
+
+            </span>
+
+            <!-- SKILLS-LISTS -->
+            <div class="col-12 d-flex flex-column flex-md-row justify-content-center " id="skills-list-wrapper">
                 <div class="row justify-content-around">
-                    <div class="pink btn-c">
-                        <button type="button"><a href="works.html">Works</a></button></div>
-                    <div class="pink btn-c">
-                        <button type="button"><a href="contact.html">Contact</a></button></div>
+
+                    <!-- DESIGN TOOLS -->
+                    <div class="d-flex col-12 col-md justify-content-center z-ind text-wrap ">
+                        <div class="skillz  b-radius-6 no-borders " style="padding: 20px;">
+                            <h3 class="text-center no-mg roboto-400">Design Tools</h3>
+                            <ul style="margin-top:10px;">
+                                <li>Adobe Photoshop</li>
+                                <li>Adobe Illustrator</li>
+                                <li>Adobe XD</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- WEB DESIGN SKILLS -->
+                    <div class="d-flex col-12 col-md justify-content-center ">
+                        <div class="skillz z-ind b-radius-6 no-borders" style="padding: 20px;" id="web-skillz">
+                            <h3 class="text-center no-mg roboto-400">Web Skills</h3>
+                            <ul class="" style="margin-top: 10px;">
+                                <li>
+                                    Html
+                                </li>
+                                <li>
+                                    Css
+                                </li>
+                                <li>
+                                    Javascript
+                                </li>
+                                <li>
+                                    CMS
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- BEHANCE AND GITHUB ICONS -->
+            <div class="col-12 d-flex justify-content-center">
+                <div class="row justify-content-around" id="skill-icons-wrapper">
+
+                    <!-- BEHANCE ICON -->
+                    <div class="d-flex col col-md justify-content-center z-ind">
+                        <div class="z-ind m-top-big b-radius-6 no-borders skill-icons d-flex justify-content-center">
+                            <a onclick="openBehanceSite()">
+                                <img src="imgs/icons/behance icon 1.svg" alt="Behance" width="70px">
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- GITHUB ICON -->
+                    <div class="d-flex col col-md justify-content-center skill-icons z-ind">
+                        <div class="z-ind m-top-big b-radius-6 no-borders skill-icons d-flex justify-content-center">
+                            <a onclick="openGithubSite()">
+                                <img src="imgs/icons/github icon 1.svg" alt="Github" width="70px">
+                            </a></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- DOWNLOAD RESUME BUTTON -->
+            <div class="m-top-big z-ind col-12 d-flex justify-content-center" style="margin-bottom: 30px;">
+                <a onclick="openResume()" class="row shadow-up btn-c z-ind b-radius-6 no-borders justify-content-center roboto-300"
+                    id="dwnl-btn"><span style="text-decoration: none;">See my Resume</span>
+                    <!-- <img src="imgs/icons/download.svg" alt=""> -->
+                </a>
+            </div>
+
+        </div>
+
+        <!-- CONTACT SECTION -->
+        <div class="row justify-content-center text-center m-top-big z-ind">
+            <span class="skills-section shadow-up" id="contact-card" style="background-color: white;">
+            </span>
+            <p class="z-ind col-12 m-top-big mb-0 secondary-c" id="fixed-contact-me">Contact me:</p>
+
+            <!-- TELEPHONE AND EMAIL WRAPPER -->
+            <div class="d-flex justify-content-center flex-wrap" style="max-width: 650px;">
+                <div class="z-ind col-12 d-flex justify-content-center">
+                    <a href="mailto:sumanjlama@gmail.com" id="email-link">
+                        <p class="z-ind mb-0 secondary-c pl-md-0 roboto-300" style="margin-top: 20px;">
+                            <img src="imgs/icons/ic_mail_outline_24px.svg" alt="">
+                            sumanjlama@gmail.com</p>
+                    </a>
+                </div>
+
+                <!-- CONTACT ICONS -->
+                <div class="z-ind d-flex justify-content-around m-top-big" id="ct-icns" style="width: 300px;">
+                    <a class="z-ind no-borders" style="background-color: transparent;">
+                        <img src="imgs/icons/messenger icon 1.svg" alt="FB messenger" width="60px">
+                    </a>
+                    <a class="z-ind no-borders " style="background-color: transparent;">
+                        <img src="imgs/icons/linkIN icon1.svg" alt="linkedIn" width="60px">
+                        </button></a>
                 </div>
             </div>
         </div>
 
-        <div class="text-center" style="margin-top: 50px;">
-            <img class=" b-radius-6 img-fluid" id="prof-pic" src="/imgs/prof pic.jpg" alt="pics">
+        <!-- FOOTER AND UP BUTTON -->
+        <div class="row justify-content-center m-top-big z-ind" style="height: 70px; overflow: hidden;">
+            <span class="z-ind shadow-up b-radius-100 primary-c col-12 text-center align-middle" id="up-btn-card" style="height: 70px;">
+            </span>
+            <img class="z-ind" src="imgs/icons/Path 3.svg" alt="UP">
         </div>
-
-        <div class="row justify-content-center align-content-center" style="margin-top: 40px;">
-            <p class="col-12 text-center no-m-btm">Lorem, ipsum dolor sit
-                amet consectetur adipisicing elit. Illo, veritatis inventore, temporibus magni,
-                consequuntur ab suscipit expedita esse consectetur sed voluptate! Tenetur nisi odit repellat,
-                consectetur illum laboriosam nulla reprehenderit? Lorem ipsum, dolor sit amet consectetur adipisicing
-                elit. Id porro magni ab nihil cupiditate, natus dolorum voluptatibus officia rerum minus possimus.
-                Possimus officiis expedita porro, beatae est quibusdam similique facere?lorem</p>
-        </div>
-
-        <div class="row justify-content-center" style="margin-top: 40px;">
-            <span class="primary-c skills-section b-radius-100" style="height: 1020px;"></span>
-
-            <div class="col-7 z-ind text-wrap">
-                <div class="skillz m-top-40 b-radius-6 no-borders" style="padding: 20px;">
-                    <h3 class="text-center no-mg">Design Tools:</h3>
-                    <ul style="margin-top:10px;">
-                        <li>Adobe Photoshop</li>
-                        <li>Adobe Illustrator</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-7 z-ind">
-                <div class="skillz z -ind m-top-25 b-radius-6 no-borders" style="padding: 20px;">
-                    <h3 class="text-center no-mg">Web Design:</h3>
-                    <ul style="margin-top: 10px;">
-                        <li>Html</li>
-                        <li>Css</li>
-                        <li>Javascript</li>
-                        <li>CMS</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="m-top-40 z-ind btn-c col-10 text-center justify-content-around">
-                <button class="z-ind b-radius-6 no-borders" id="dwnl-btn"><span style="padding: 0 5px;"> Download
-                        Resume </span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round" class="feather feather-download">
-                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
-                        <polyline points="7 10 12 15 17 10"></polyline>W
-                        <line x1="12" y1="15" x2="12" y2="3"></line>
-                    </svg></button>
-            </div>
-            <div class="row m-top-40 z-ind btn-c justify-content-around" style="padding: 0 20px; width: 100%;">
-                <div class="col text-center" style="padding: 0;">
-                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="86"
-                        height="85" viewBox="0 0 86 85" class="z-ind">
-                        <defs>
-                            <style>
-                                .cls-1 {
-                                    fill: #feba70;
-                                }
-
-                                .cls-2 {
-                                    fill: #fff;
-                                }
-
-                                .cls-3 {
-                                    filter: url(#Path_337);
-                                }
-                            </style>
-                            <filter id="Path_337" x="0" y="0" width="86" height="85" filterUnits="userSpaceOnUse">
-                                <feOffset dy="-2" input="SourceAlpha" />
-                                <feGaussianBlur stdDeviation="2.5" result="blur" />
-                                <feFlood flood-color="#3b3b3b" flood-opacity="0.129" />
-                                <feComposite operator="in" in2="blur" />
-                                <feComposite in="SourceGraphic" />
-                            </filter>
-                        </defs>
-                        <g id="behance_icon_1" data-name="behance icon 1" transform="translate(7.5 9.5)">
-                            <g class="cls-3" transform="matrix(1, 0, 0, 1, -7.5, -9.5)">
-                                <path id="Path_337-2" data-name="Path 337" class="cls-1"
-                                    d="M2,0H69a2,2,0,0,1,2,2V68a2,2,0,0,1-2,2H2a2,2,0,0,1-2-2V2A2,2,0,0,1,2,0Z"
-                                    transform="translate(7.5 9.5)" />
-                            </g>
-                            <path id="Path_332" data-name="Path 332" class="cls-2"
-                                d="M904.231,151.459a7.651,7.651,0,0,1,1.246,4.444,8.163,8.163,0,0,1-1.424,4.717,8.584,8.584,0,0,1-2.313,2.361,8.978,8.978,0,0,1-3.648,1.481,25.281,25.281,0,0,1-4.538.383H879.02V135h15.542q5.931.111,8.364,3.182a7.133,7.133,0,0,1,1.483,4.581,6.272,6.272,0,0,1-1.483,4.362,7.636,7.636,0,0,1-2.432,1.7A7.029,7.029,0,0,1,904.231,151.459Zm-17.8-4.717h6.822A6.962,6.962,0,0,0,896.7,146,2.741,2.741,0,0,0,898,143.4a2.64,2.64,0,0,0-1.72-2.743,12.831,12.831,0,0,0-3.856-.494h-5.991v6.584Zm12.22,8.667a3.179,3.179,0,0,0-2.076-3.181,8.241,8.241,0,0,0-3.2-.494h-6.941v7.955h6.822a7.694,7.694,0,0,0,3.263-.547A3.728,3.728,0,0,0,898.655,155.409Zm32.033-4.828a24.869,24.869,0,0,1,.178,4.225H914.079a4.926,4.926,0,0,0,2.373,4.5,6.443,6.443,0,0,0,3.381.824,5.355,5.355,0,0,0,3.322-.988,4.18,4.18,0,0,0,1.246-1.481h6.169a6.812,6.812,0,0,1-2.254,3.9q-3.086,3.127-8.72,3.126a13.177,13.177,0,0,1-8.1-2.633q-3.531-2.631-3.53-8.557,0-5.6,3.174-8.559a11.636,11.636,0,0,1,8.275-2.963,14.165,14.165,0,0,1,5.428.988,9.251,9.251,0,0,1,4,3.182A10.107,10.107,0,0,1,930.689,150.581Zm-4.805-11.357H912.833v-3.018h13.051Zm-1.246,11.905a4.567,4.567,0,0,0-1.631-3.4,5.59,5.59,0,0,0-3.589-1.152,4.952,4.952,0,0,0-3.589,1.233,5.834,5.834,0,0,0-1.631,3.319Z"
-                                transform="translate(-868.916 -115.004)" />
-                        </g>
-                    </svg></div>
-
-                <div class="col text-center" style="padding: 0;">
-                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="83"
-                        height="85" viewBox="0 0 83 85" class="z-ind">
-                        <defs>
-                            <style>
-                                .cls-1 {
-                                    fill: #feba70;
-                                }
-
-                                .cls-2 {
-                                    fill: #fff;
-                                    fill-rule: evenodd;
-                                }
-
-                                .cls-3 {
-                                    filter: url(#Path_336);
-                                }
-                            </style>
-                            <filter id="Path_336" x="0" y="0" width="83" height="85" filterUnits="userSpaceOnUse">
-                                <feOffset dy="-2" input="SourceAlpha" />
-                                <feGaussianBlur stdDeviation="2.5" result="blur" />
-                                <feFlood flood-color="#606060" flood-opacity="0.129" />
-                                <feComposite operator="in" in2="blur" />
-                                <feComposite in="SourceGraphic" />
-                            </filter>
-                        </defs>
-                        <g id="github_icon_1" data-name="github icon 1" transform="translate(7.5 9.5)">
-                            <g class="cls-3" transform="matrix(1, 0, 0, 1, -7.5, -9.5)">
-                                <path id="Path_336-2" data-name="Path 336" class="cls-1"
-                                    d="M2,0H66a2,2,0,0,1,2,2V68a2,2,0,0,1-2,2H2a2,2,0,0,1-2-2V2A2,2,0,0,1,2,0Z"
-                                    transform="translate(7.5 9.5)" />
-                            </g>
-                            <path id="Path_333" data-name="Path 333" class="cls-2"
-                                d="M166.65,107.44c-16.748,0-30.33,14-30.33,31.266a31.2,31.2,0,0,0,20.744,29.663c1.518.286,2.071-.677,2.071-1.507,0-.743-.026-2.708-.041-5.318-8.437,1.89-10.217-4.19-10.217-4.19-1.38-3.612-3.369-4.573-3.369-4.573-2.754-1.94.209-1.9.209-1.9,3.045.221,4.646,3.22,4.646,3.22,2.706,4.779,7.1,3.4,8.828,2.6a6.762,6.762,0,0,1,1.925-4.18c-6.735-.789-13.817-3.47-13.817-15.451a12.294,12.294,0,0,1,3.123-8.389,11.551,11.551,0,0,1,.3-8.274s2.545-.841,8.34,3.205a27.939,27.939,0,0,1,15.187,0c5.791-4.046,8.333-3.205,8.333-3.205a11.555,11.555,0,0,1,.3,8.274A12.272,12.272,0,0,1,186,137.068c0,12.01-7.093,14.653-13.85,15.426,1.089.965,2.059,2.875,2.059,5.79,0,4.18-.037,7.552-.037,8.577,0,.835.547,1.808,2.086,1.5a31.2,31.2,0,0,0,20.727-29.659C196.985,121.437,183.4,107.44,166.65,107.44Z"
-                                transform="translate(-132.863 -103.044)" />
-                        </g>
-                    </svg></div>
-            </div>
-        </div>
-
-        <div class="row justify-content-center text-center m-top-40 z-ind">
-            <span class="skills-section b-radius-100" id="contact-card"
-                style="background-color: white;height: 350px;"></span>
-            <h2 class="z-ind col-12 m-top-40 no-m-btm secondary-c">Contact me:</h2>
-
-            <h3 class="z-ind col-8  no-m-btm secondary-c" style="margin-top:25px;">
-                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="40" viewBox="0 0 26 36"
-                    style="margin-right:10px;">
-                    <defs>
-                        <style>
-                            .a {
-                                fill: #416b8b;
-                            }
-                        </style>
-                    </defs>
-                    <path class="a"
-                        d="M23.933,9.119,22.721,10.33a5.558,5.558,0,0,1,0,7.876l1.212,1.212a6.972,6.972,0,0,0,0-10.3Zm-2.545,2.545-1.212,1.212a2.364,2.364,0,0,1,0,2.787l1.212,1.212A3.656,3.656,0,0,0,21.388,11.663ZM16.541,1H4.424A2.431,2.431,0,0,0,2,3.424V25.235a2.431,2.431,0,0,0,2.424,2.424H16.541a2.431,2.431,0,0,0,2.424-2.424V3.424A2.431,2.431,0,0,0,16.541,1Zm0,23.023H4.424V4.635H16.541Z"
-                        transform="translate(-2 -1)" />
-                </svg>01234567890</h3>
-            <h3 class="z-ind col-12 no-m-btm secondary-c" style="margin-top: 5px;">
-                <svg class="z-ind" style="margin-right: 10px;" xmlns="http://www.w3.org/2000/svg" width="29" height="23"
-                    viewBox="0 0 24.235 19.388">
-                    <path
-                        d="M23.812,4H4.424A2.42,2.42,0,0,0,2.012,6.424L2,20.965a2.431,2.431,0,0,0,2.424,2.424H23.812a2.431,2.431,0,0,0,2.424-2.424V6.424A2.431,2.431,0,0,0,23.812,4Zm0,16.965H4.424V8.847l9.694,6.059,9.694-6.059Zm-9.694-8.482L4.424,6.424H23.812Z"
-                        transform="translate(-2 -4)" fill="#416b8b" /></svg>example@email.com</h3>
-            <div class="z-ind col-12" style="margin-top: 40px;">
-                <button class="z-ind no-borders" style="margin-right: 40px; background-color: transparent;"><svg
-                        id="messenger_icon_1" data-name="messenger icon 1" xmlns="http://www.w3.org/2000/svg"
-                        width="50.115" height="51.284" viewBox="0 0 50.115 51.284">
-                        <path id="Path_335" data-name="Path 335"
-                            d="M2.864,0H47.251a2.856,2.856,0,0,1,2.864,2.849V48.435a2.856,2.856,0,0,1-2.864,2.849H2.864A2.856,2.856,0,0,1,0,48.435V2.849A2.856,2.856,0,0,1,2.864,0Z"
-                            fill="#feba70" />
-                        <g id="Group_130" data-name="Group 130" transform="translate(4 4)">
-                            <path id="Path_238" data-name="Path 238"
-                                d="M1044.7,345.946a22.108,22.108,0,0,1,10.751,2.7,20.331,20.331,0,0,1,7.658,7.129,18.551,18.551,0,0,1,2.945,10.079,18.32,18.32,0,0,1-2.945,10.029,19.832,19.832,0,0,1-7.658,7.129,21.786,21.786,0,0,1-10.751,2.753,22.731,22.731,0,0,1-6.136-.836l-7.265,4.03v-7.619a20.538,20.538,0,0,1-5.793-6.786,18.31,18.31,0,0,1-2.161-8.7,18.559,18.559,0,0,1,2.946-10.079,20.347,20.347,0,0,1,7.658-7.129,22.517,22.517,0,0,1,10.75-2.753v.05Zm13.795,14.307-10.458,5.851-5.6-5.851-11.684,12.488,10.654-5.851,5.4,5.851Z"
-                                transform="translate(-1023.349 -345.896)" fill="#fff" />
-                        </g>
-                    </svg>
-                </button>
-                <button class="z-ind no-borders " style="background-color: transparent;"><svg
-                        xmlns="http://www.w3.org/2000/svg" width="50.99" height="51.284" viewBox="0 0 50.99 51.284">
-                        <g id="linkIN_icon1" data-name="linkIN icon1" transform="translate(9.514 -2.607)">
-                            <rect id="Rectangle_34" data-name="Rectangle 34" width="48.207" height="49.284" rx="2"
-                                transform="translate(-9.134 3.176)" fill="#fff" />
-                            <path id="Path_259" data-name="Path 259"
-                                d="M854.53,633.073a3.725,3.725,0,0,1,2.7,1.083,3.517,3.517,0,0,1,1.113,2.608v43.957a3.416,3.416,0,0,1-1.113,2.579,3.709,3.709,0,0,1-2.637,1.056H811.1a3.7,3.7,0,0,1-2.638-1.056,3.411,3.411,0,0,1-1.113-2.579V636.764a3.511,3.511,0,0,1,1.113-2.608,3.723,3.723,0,0,1,2.7-1.083H854.53Zm-32.411,15.5a4.1,4.1,0,0,0,0-5.744,4.26,4.26,0,0,0-3.106-1.142,4.366,4.366,0,0,0-3.136,1.142,3.8,3.8,0,0,0-1.2,2.872,3.84,3.84,0,0,0,1.172,2.872,4.175,4.175,0,0,0,3.048,1.143h.059A4.329,4.329,0,0,0,822.119,648.574Zm.7,4.309h-7.678v23.151h7.678Zm27.722,9.846q0-5.1-2.52-7.852a9.1,9.1,0,0,0-10.96-1.232,9.076,9.076,0,0,0-2.286,2.522v-3.282H827.1q.057,1.347,0,12.367v10.783h7.678V663.081a5.756,5.756,0,0,1,.234-1.876,4.667,4.667,0,0,1,1.407-1.933,3.892,3.892,0,0,1,2.579-.881,3.378,3.378,0,0,1,2.989,1.465,6.835,6.835,0,0,1,.879,3.752v12.424h7.678Z"
-                                transform="translate(-816.863 -630.466)" fill="#feba70" />
-                        </g>
-                    </svg>
-                </button>
-            </div>
-        </div>
-
-        <div class="row justify-content-center m-top-40 z-ind" style="height: 90px; overflow: hidden;">
-            <span class="z-ind b-radius-100 primary-c col-12 text-center align-middle" id="up-btn-card"
-                style="height: 90px;"></span>
-            <div class="z-ind-2" id="arw-2-top" onclick="">
-            </div>
-        </div>
+    </div>
 
     </div>
-    </div>
+
 </body>
-<script src="" async defer></script>
+<script src="code.js" async defer></script>
 <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 <script src="/node_modules/bootstrap/dist/js/bootstrap.js"></script>
 

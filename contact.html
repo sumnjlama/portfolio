@@ -1,10 +1,6 @@
 <!doctype html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!-->
+
 <html class="no-js" lang="en">
-<!--<![endif]-->
 
 <head>
     <meta charset="utf-8">
@@ -12,60 +8,99 @@
     <title></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="Suman J Lama">
+    <meta name="description" content="I am a multi-disciplinary media designer">
+
+    <!-- CUSTOM CSS -->
+    <link rel="preload" href="main.css" as="style">
     <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- BOOTSTRAP CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <!-- CUSTOM FONT: ROBOTO -->
+    <link rel="stylesheet" href="fonts/Roboto/stylesheet.css">
+
 </head>
 
 <body>
-    <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
     <div class="container-fluid">
-        <div class="row top-row">
-            <div class="col col-8 blue"><a href="index.html">Suman King</a></div>
-            <div class="col red">
-                <button><a href="works.html">Works</a></button>
-                <button><a href="contact.html">Contact</a></button>
+
+        <!-- TOP SECTION: TITLE AND NAV BUTTONS -->
+        <div class="blue row top-row justify-content-center" id="top-sect-wrapper" >
+            <div class=" col-12 col-md-5 mb-4 mb-md-0 text-center text-md-left pl-md-0">
+                <a class="roboto-400" href="index.html" id="self-title">Suman Lama</a>
+            </div>
+            <div class="col-12 col-md-7">
+                <div class="row justify-content-around justify-content-md-end " style="height: 100%;">
+                    <div class="mr-md-4 align-self-center">
+                        <a href="works.html" class="pink nav-c roboto-300" style="color: white;">My Works</a></div>
+                    <div class="align-self-center">
+                        <a href="contact.html" class="pink nav-c roboto-300" style="color: white;">Contact Me</a></div>
+                </div>
             </div>
         </div>
 
-        <div class="row row-cols-1">
-            <h3>Let me know if you are interested in giving me work</h3>
-            <h5>Your name<span style="color:red">*</span></h5>
-            <input type="text" name="" id="" placeholder="What may I call you?">
-            <h5>Your email address<span style="color:red">*</span></h5>ww
-            <input type="email" name="" id="" placeholder="Email goes here...">
-            <h5>Your Message<span style="color:red">*</span></h5>
-            <textarea name="" id="" cols="30" rows="10" placeholder="Tell me something..."></textarea>
-            <button type="submit" onclick= >Send</button>
+        <!-- CONTACT FORMS -->
+        <div class="m-top-1st-element row justify-content-center">
+            <div class="col-12">
+                <div class="row justify-content-center text-center">
+                    <p id="contact-header">Send me a message through the form below:</p>
+                </div>
+            </div>
+            <form class="col-12 col-md-6 col-xl-4 m-top-small" action="">
+                <label for="name-input">Your name</label>
+                <input id="name-input" class="form-control" type="text" placeholder="">
+
+                <label class="mt-4" for="email-input">Email address</label>
+                <input id="email-input" class="form-control" type="text" placeholder="">
+
+                <label class="mt-4" for="message-box">Message me</label>
+                <textarea id="message-box" class="form-control" placeholder=""></textarea>
+
+                <button class="mt-5 btn btn-primary btn-lg btn-block "  type="submit" id="form-submit-btn">Send</button>
+            </form>
 
         </div>
 
-        <div class="row">
-            <button class="col-10">Download Resume</button>
-            <button class="col-5">Behance</button>
-            <button class="col-5">Github</button>
+
+        <!-- CONTACT SECTION -->
+        <div class="row justify-content-center text-center m-top-big z-ind">
+            <span class="skills-section shadow-up" id="contact-card" style="background-color: white;">
+            </span>
+            <p class="z-ind col-12 m-top-big mb-0 secondary-c" id="fixed-contact-me">Contact me:</p>
+
+            <!-- TELEPHONE AND EMAIL WRAPPER -->
+            <div class="d-flex justify-content-center flex-wrap" style="max-width: 650px;">
+                <div class="z-ind col-12 d-flex justify-content-center">
+                    <a href="mailto:sumanjlama@gmail.com" id="email-link">
+                        <p class="z-ind mb-0 secondary-c pl-md-0 roboto-300" style="margin-top: 20px;">
+                            <img src="imgs/icons/ic_mail_outline_24px.svg" alt="#">
+                            sumanjlama@gmail.com</p>
+                    </a>
+                </div>
+
+                <!-- CONTACT ICONS -->
+                <div class="z-ind d-flex justify-content-around m-top-big" id="ct-icns" style="width: 300px;">
+                    <a class="z-ind no-borders" style="background-color: transparent;">
+                        <img src="imgs/icons/messenger icon 1.svg" alt="FB messenger" width="60px">
+                    </a>
+                    <a class="z-ind no-borders " style="background-color: transparent;">
+                        <img src="imgs/icons/linkIN icon1.svg" alt="linkedIn" width="60px">
+                        </button></a>
+                </div>
+            </div>
         </div>
-        <div class="row">
-            <h2>Contact me:</h2>
-            <h2>01234567890</h2>
-            <h2>example@email.com</h2>
-            <button>Fb Chat</button><button>LinkedIn</button>
+
+        <!-- FOOTER AND UP BUTTON -->
+        <div class="row justify-content-center m-top-big z-ind" style="height: 70px; overflow: hidden;">
+            <span class="z-ind shadow-up b-radius-100 primary-c col-12 text-center align-middle" id="up-btn-card" style="height: 70px;">
+            </span>
+            <img class="z-ind" src="imgs/icons/Path 3.svg" alt="UP">
         </div>
-        <div class="row"><span class="col">&#8743;</span></div>
     </div>
 
 </body>
-<script src="" async defer></script>
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-</script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
-</script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
-</script>
+<script src="code.js" async defer></script>
+<script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+<script src="/node_modules/bootstrap/dist/js/bootstrap.js"></script>
 
 </html>

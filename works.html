@@ -1,10 +1,6 @@
 <!doctype html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!-->
+
 <html class="no-js" lang="en">
-<!--<![endif]-->
 
 <head>
     <meta charset="utf-8">
@@ -12,55 +8,224 @@
     <title></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="Suman J Lama">
+    <meta name="description" content="I am a multi-disciplinary media designer">
+
+    <!-- CUSTOM CSS -->
+    <link rel="preload" href="main.css" as="style">
     <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- BOOTSTRAP CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <!-- CUSTOM FONT: ROBOTO -->
+    <link rel="stylesheet" href="fonts/Roboto/stylesheet.css">
+
 </head>
 
 <body>
-    <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
     <div class="container-fluid">
-        <div class="row top-row">
-            <div class="col col-8 blue"><a href="index.html">Suman King</a></div>
-            <div class="col red">
-                <button><a href="works.html">Works</a></button>
-                <button><a href="contact.html">Contact</a></button>
+
+        <!-- TOP SECTION: TITLE AND NAV BUTTONS -->
+        <div class="blue row top-row justify-content-center" id="top-sect-wrapper" >
+            <div class=" col-12 col-md-5 mb-4 mb-md-0 text-center text-md-left pl-md-0">
+                <a class="roboto-400" href="index.html" id="self-title" style="max-width: 210px;">Suman Lama</a>
+            </div>
+            <div class="col-12 col-md-7">
+                <div class="row justify-content-around justify-content-md-end " style="height: 100%;">
+                    <div class="mr-md-4 align-self-center">
+                        <a href="works.html" class="pink nav-c roboto-300" style="color: white;">My Works</a></div>
+                    <div class="align-self-center">
+                        <a href="contact.html" class="pink nav-c roboto-300" style="color: white;">Contact Me</a></div>
+                </div>
             </div>
         </div>
-        
-        <div class="row row-cols-1">
-            <div class="col works-previews"></div>
-            <div class="col works-previews"></div>
-            <div class="col works-previews"></div>
-            <div class="col works-previews"></div>
+
+        <!-- WORKS THUMBNAIL -->
+        <div class="text-center m-top-1st-element row justify-content-center " id="work-thumbs">
+            <div class="col-12 d-flex justify-content-center">
+                <div class="text-center row justify-content-center " style="max-width: 1200px;">
+            <!--  -->
+            <div class="mt-md-0 mt-4 d-flex justify-content-center mb-md-4 work-img-wrapper work-wid" >
+                <div class="card card-wid works-border">
+                    <img class="card-img b-radius-6" src="imgs/Work-thumbnails/JHR webpage.png" alt="work 3">
+                    <span class="card-img-overlay hide">
+                        <p class="work-titles">JHR Nature Cure</p>
+                        <p>A CMS Website with added custom HTML and CSS codes.</p>
+                        <a class="work-link-btn" onclick="openSite1()">See more</a>
+                    </span>
+                </div>
+            </div>
+
+            <!--  -->
+            <div class="mt-md-0 mt-4 d-flex justify-content-center mb-md-4 work-img-wrapper">
+                <div class="card card-wid works-border">
+                    <img class="card-img b-radius-6" src="imgs/Work-thumbnails/snowdonia.png" alt="work 3">
+                    <span class="card-img-overlay hide">
+                        <p class="work-titles">Snowdonia, Snowdon</p>
+                        <p>A photo gallery website built using HTML, CSS and JS.</p>
+                        <a class="work-link-btn" onclick="openSite2()">See more</a>
+                    </span>
+                </div>
+            </div>
+
+            <!--  -->
+            <div class="mt-md-0 mt-4 d-flex justify-content-center mb-md-4 work-img-wrapper">
+                <div class="card card-wid works-border">
+                    <img class="card-img b-radius-6" src="imgs/Work-thumbnails/TB.png" alt="work 3">
+                    <span class="card-img-overlay hide" >
+                        <p class="work-titles">Triple Booster</p>
+                        <p>Branding design for a health supplement capsules from JHR nature cure.</p>
+                        <a class="work-link-btn" onclick="openSite3()">See more</a>
+                    </span>
+                </div>
+            </div>
+
+            <!--  -->
+            <div class="mt-md-0 mt-4 d-flex mb-4 justify-content-center work-img-wrapper" >
+                <div class="card card-wid works-border">
+                    <img class="card-img b-radius-6" src="imgs/Work-thumbnails/TBplus.png" alt="work 3">
+                    <span class="card-img-overlay hide">
+                        <p class="work-titles">Triple Booster Plus</p>
+                        <p>Branding design for a health supplement capsules from JHR nature cure.</p>
+                        <a class="work-link-btn" href="index.html">See more</a>
+                    </span>
+                </div>
+            </div>
+            
+            <!--  -->
+            <div class="mt-md-0 mt-4 d-flex mb-4 justify-content-center work-img-wrapper" >
+                <div class="card card-wid works-border">
+                    <img class="card-img b-radius-6" src="imgs/Work-thumbnails/RawGold.png" alt="work 3" >
+                    <span class="card-img-overlay hide">
+                        <p class="work-titles">Raw Gold</p>
+                        <p>Branding design for an organic protein powder from JHR nature cure.</p>
+                        <a class="work-link-btn" href="index.html">See more</a>
+                    </span>
+                </div>
+            </div>
+        </div>
+        </div>
         </div>
 
-        <div class="row">
-            <button class="col-10">Download Resume</button>
-            <button class="col-5">Behance</button>
-            <button class="col-5">Github</button>
+        <!-- SKILL AND RESUME SECTION -->
+        <div class="row justify-content-center" id="skills-wrapper">
+
+            <!-- BACKGROUND -->
+            <span class="primary-c skills-section shadow-up shadow-down skills-sect-home" >
+
+            </span>
+
+            <!-- SKILLS-LISTS -->
+            <div class="col-12 d-flex flex-column flex-md-row justify-content-center " id="skills-list-wrapper" >
+                <div class="row justify-content-around">
+
+                    <!-- DESIGN TOOLS -->
+                    <div class="d-flex col-12 col-md justify-content-center z-ind text-wrap ">
+                        <div class="skillz  b-radius-6 no-borders " style="padding: 20px;">
+                            <h3 class="text-center no-mg roboto-400">Design Tools</h3>
+                            <ul style="margin-top:10px;">
+                                <li>Adobe Photoshop</li>
+                                <li>Adobe Illustrator</li>
+                                <li>Adobe XD</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- WEB DESIGN SKILLS -->
+                    <div class="d-flex col-12 col-md justify-content-center ">
+                        <div class="skillz z-ind b-radius-6 no-borders" style="padding: 20px;"
+                            id="web-skillz">
+                            <h3 class="text-center no-mg roboto-400">Web Skills</h3>
+                            <ul class="" style="margin-top: 10px;">
+                                <li>
+                                    Html
+                                </li>
+                                <li>
+                                    Css
+                                </li>
+                                <li>
+                                    Javascript
+                                </li>
+                                <li>
+                                    CMS
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- BEHANCE AND GITHUB ICONS -->
+            <div class="col-12 d-flex justify-content-center">
+                <div class="row justify-content-around" id="skill-icons-wrapper">
+
+                    <!-- BEHANCE ICON -->
+                    <div class="d-flex col col-md justify-content-center z-ind">
+                        <div class="z-ind m-top-big b-radius-6 no-borders skill-icons d-flex justify-content-center">
+                            <a onclick="openBehanceSite()">
+                                <img src="imgs/icons/behance icon 1.svg" alt="Behance" width="70px">
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- GITHUB ICON -->
+                    <div class="d-flex col col-md justify-content-center skill-icons z-ind">
+                        <div class="z-ind m-top-big b-radius-6 no-borders skill-icons d-flex justify-content-center">
+                            <a onclick="openGithubSite()">
+                                <img src="imgs/icons/github icon 1.svg" alt="Github" width="70px">
+                            </a></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- DOWNLOAD RESUME BUTTON -->
+            <div class="m-top-big z-ind col-12 d-flex justify-content-center" style="margin-bottom: 30px;">
+                <a onclick="openResume()" class="row btn-c z-ind b-radius-6 no-borders justify-content-center roboto-300"
+                    id="dwnl-btn"><span style="text-decoration: none;">See my Resume</span>
+                    <!-- <img src="imgs/icons/download.svg" alt=""> -->
+                </a>
+            </div>
+
         </div>
-        <div class="row">
-            <h2>Contact me:</h2>
-            <h2>01234567890</h2>
-            <h2>example@email.com</h2>
-            <button>Fb Chat</button><button>LinkedIn</button>
+
+        <!-- CONTACT SECTION -->
+        <div class="row justify-content-center text-center m-top-big z-ind">
+            <span class="skills-section shadow-up" id="contact-card" style="background-color: white;">
+            </span>
+            <p class="z-ind col-12 m-top-big mb-0 secondary-c" id="fixed-contact-me">Contact me:</p>
+
+            <!-- TELEPHONE AND EMAIL WRAPPER -->
+            <div class="d-flex justify-content-center flex-wrap" style="max-width: 650px;">
+                <div class="z-ind col-12 d-flex justify-content-center">
+                    <a href="mailto:sumanjlama@gmail.com" id="email-link">
+                        <p class="z-ind mb-0 secondary-c pl-md-0 roboto-300" style="margin-top: 20px;">
+                            <img src="imgs/icons/ic_mail_outline_24px.svg" alt="#">
+                            sumanjlama@gmail.com</p>
+                    </a>
+                </div>
+
+                <!-- CONTACT ICONS -->
+                <div class="z-ind d-flex justify-content-around m-top-big" id="ct-icns" style="width: 300px;">
+                    <a class="z-ind no-borders" style="background-color: transparent;">
+                        <img src="imgs/icons/messenger icon 1.svg" alt="FB messenger" width="60px">
+                    </a>
+                    <a class="z-ind no-borders " style="background-color: transparent;">
+                        <img src="imgs/icons/linkIN icon1.svg" alt="linkedIn" width="60px">
+                        </button></a>
+                </div>
+            </div>
         </div>
-        <div class="row"><span class="col">&#8743;</span></div>
+
+        <!-- FOOTER AND UP BUTTON -->
+        <div class="row justify-content-center m-top-big z-ind" style="height: 70px; overflow: hidden;">
+            <span class="z-ind shadow-up b-radius-100 primary-c col-12 text-center align-middle" id="up-btn-card" style="height: 70px;">
+            </span>
+            <img class="z-ind" src="imgs/icons/Path 3.svg" alt="UP">
+        </div>
     </div>
 
 </body>
-<script src="" async defer></script>
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-</script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
-</script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
-</script>
+<script src="code.js" async defer></script>
+<script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+<script src="/node_modules/bootstrap/dist/js/bootstrap.js"></script>
 
 </html>
