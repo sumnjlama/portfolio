@@ -5,17 +5,18 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title></title>
+    <title>Contact Me</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="author" content="Suman J Lama">
-    <meta name="description" content="I am a multi-disciplinary media designer">
+    <meta name="description" content="Website coded by Suman Lama. I am a multidisciplinary designer and artist.">
 
     <!-- CUSTOM CSS -->
     <link rel="preload" href="main.css" as="style" type="text/css">
     <link rel="stylesheet" href="main.css" type="text/css">
     <!-- BOOTSTRAP CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css" type="text/css">
     <!-- CUSTOM FONT: ROBOTO -->
     <link rel="stylesheet" href="fonts/Roboto/stylesheet.css">
@@ -26,46 +27,58 @@
     <div class="container-fluid">
 
         <!-- TOP SECTION: TITLE AND NAV BUTTONS -->
-        <div class="blue row top-row justify-content-center" id="top-sect-wrapper" >
-            <div class=" col-12 col-md-5 mb-4 mb-md-0 text-center text-md-left pl-md-0">
-                <a class="roboto-400" href="index.html" id="self-title">Suman Lama</a>
-            </div>
-            <div class="col-12 col-md-7">
-                <div class="row justify-content-around justify-content-md-end " style="height: 100%;">
-                    <div class="mr-md-4 align-self-center">
-                        <a href="works.html" class="pink nav-c roboto-300" style="color: white;">My Works</a></div>
-                    <div class="align-self-center">
-                        <a href="contact.html" class="pink nav-c roboto-300" style="color: white;">Contact Me</a></div>
+        <div class="row top-row justify-content-center fade-in">
+            <div class="col-12" id="top-sect-wrapper">
+                <div class="blue row">
+                    <div class="col-12 col-md-6 mb-4 mb-md-0 text-center text-md-left pl-md-0">
+                        <a class="" href="home.html" id="self-title">SL</a>
+
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="row justify-content-around justify-content-md-end " style="height: 100%;">
+                            <div class="mr-md-4 align-self-center">
+                                <a href="works.html" class="pink nav-c roboto-300" style="color: white;">My Works</a>
+                            </div>
+                            <div class="align-self-center">
+                                <a href="contact.html" class="pink nav-c roboto-300" style="color: white;">Contact
+                                    Me</a></div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
 
         <!-- CONTACT FORMS -->
-        <div class="m-top-1st-element row justify-content-center">
+        <div class="m-top-1st-element-lower row justify-content-center  fade-in">
             <div class="col-12">
-                <div class="row justify-content-center text-center">
-                    <p id="contact-header">Send me a message through the form below:</p>
+                <div class="row justify-content-center text-center mt-4 mt-md-0">
+                    <p id="contact-header">Send me a message below:</p>
                 </div>
             </div>
-            <form class="col-12 col-md-6 col-xl-4 m-top-small" action="">
-                <label for="name-input">Your name</label>
-                <input id="name-input" class="form-control" type="text" placeholder="">
+            <form class="col-12 col-md-6 col-xl-4 m-top-small" action="https://formspree.io/f/mleonaay" method="POST" autocomplete="off"
+                id="my-form">
+                <div><label for="name-input">Your name</label>
+                    <input id="name-input" class="form-control" type="text" name="name" required></div>
 
-                <label class="mt-4" for="email-input">Email address</label>
-                <input id="email-input" class="form-control" type="text" placeholder="">
+                <div><label class="mt-4" for="email-input">Email address</label>
+                    <input id="email-input" class="form-control" type="text" name="email" required></div>
 
-                <label class="mt-4" for="message-box">Message me</label>
-                <textarea id="message-box" class="form-control" placeholder=""></textarea>
+                <div><label class="mt-4" for="message-box">Message me</label>
+                    <textarea id="message-box" class="form-control" name="message" required></textarea></div>
 
-                <button class="mt-5 btn btn-primary btn-lg btn-block "  type="submit" id="form-submit-btn">Send</button>
+                <button class="mt-5 nav-c btn-lg btn-block " type="submit" id="form-submit-btn">Send</button>
+
             </form>
+
+            <div class="col-12 text-center pt-4" id="status"></div>
 
         </div>
 
 
         <!-- CONTACT SECTION -->
-        <div class="row justify-content-center text-center m-top-big z-ind">
-            <span class="skills-section shadow-up" id="contact-card" style="background-color: white;">
+        <div class="row justify-content-center text-center m-top-big z-ind fade-in" id="cont-wrapper">
+            <span class="skills-section shadow-up b-radius-100" id="contact-card"
+                style="background-color: white; max-width: 850px;">
             </span>
             <p class="z-ind col-12 m-top-big mb-0 secondary-c" id="fixed-contact-me">Contact me:</p>
 
@@ -74,17 +87,19 @@
                 <div class="z-ind col-12 d-flex justify-content-center">
                     <a href="mailto:sumanjlama@gmail.com" id="email-link">
                         <p class="z-ind mb-0 secondary-c pl-md-0 roboto-300" style="margin-top: 20px;">
-                            <img src="imgs/icons/ic_mail_outline_24px.svg" alt="#">
+                            <img src="imgs/icons/ic_mail_outline_24px.svg" alt="">
                             sumanjlama@gmail.com</p>
                     </a>
                 </div>
 
                 <!-- CONTACT ICONS -->
                 <div class="z-ind d-flex justify-content-around m-top-big" id="ct-icns" style="width: 300px;">
-                    <a class="z-ind no-borders" style="background-color: transparent;">
+                    <a onclick="openSite('https://www.facebook.com/sumanjlama')" class="z-ind no-borders "
+                        style="background-color: transparent;">
                         <img src="imgs/icons/messenger icon 1.svg" alt="FB messenger" width="60px">
                     </a>
-                    <a class="z-ind no-borders " style="background-color: transparent;">
+                    <a onclick="openSite('https://linkedin.com/in/suman-lama-96b6a9185')" class="z-ind no-borders "
+                        style="background-color: transparent;">
                         <img src="imgs/icons/linkIN icon1.svg" alt="linkedIn" width="60px">
                         </button></a>
                 </div>
@@ -92,10 +107,11 @@
         </div>
 
         <!-- FOOTER AND UP BUTTON -->
-        <div class="row justify-content-center m-top-big z-ind" style="height: 70px; overflow: hidden;">
-            <span class="z-ind shadow-up b-radius-100 primary-c col-12 text-center align-middle" id="up-btn-card" style="height: 70px;">
+        <div class="row justify-content-center m-top-big z-ind " style="height: 70px; overflow: hidden;">
+            <span class="z-ind shadow-up b-radius-100 col-12 text-center align-middle" id="up-btn-card"
+                style="height: 70px;">
             </span>
-            <img class="z-ind" src="imgs/icons/Path 3.svg" alt="UP">
+            <img onclick="toTheTop()" class="z-ind" id="up-btn" src="imgs/icons/Path 3.svg" alt="UP">
         </div>
     </div>
 
