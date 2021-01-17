@@ -37,7 +37,7 @@
     <div class="container-fluid">
 
         <!-- TOP SECTION: TITLE AND NAV BUTTONS -->
-        <section class="row justify-content-center " id="topbar-section">
+        <section class="row justify-content-center z-ind fade-in" id="topbar-section">
 
             <div class="col-12">
                 <div class="row justify-content-center align-items-center" id="topbar-contents-wrapper">
@@ -75,7 +75,7 @@
 
                     <!-- HAM BUTTONS -->
                     <div class="col d-flex justify-content-end align-items-center fade-in"
-                        id="topbar-contents-ham-wrapper ">
+                        id="topbar-contents-ham-wrapper">
                         <div class="ham-menu-wrapped px-1" id="ham-button" onclick="showNav()">
                             <div class="ham-menu" id="ham-bar-1"></div>
                             <div class="ham-menu" id="ham-bar-2"></div>
@@ -83,39 +83,32 @@
                         </div>
                     </div>
 
-                    <!-- NAV LINK BUTTONS LARGE SCREENS-->
-                    <div class="col-12 col-lg-6 fade-in" id="topbar-contents-navs-wrapper">
-                        <div class="row justify-content-around justify-content-lg-end " style="height: 100%;">
-
-                            <!-- PORTFOLIO NAV -->
-                            <a href="#portfolio" class="mr-lg-5 align-self-center nav-buttons roboto-300">
-                                <span class=" ">Portfolio</span>
-                            </a>
-
-                            
-                            <!-- CONTACT NAV -->
-                            <a href="contact.html" class="align-self-center nav-buttons roboto-300">
-                                <span class=" ">Contact Me</span>
-                            </a>
-                        </div>
-                    </div>
                 </div>
             </div>
+
         </section>
 
         <!-- FILLER -->
-        <section class="row align-items-center justify-content-center z-ind" id="intro-section">
+        <section class="row align-items-center justify-content-center z-ind fade-in" id="intro-section">
             <div class="col-12 text-center" style="color: white;">
                 <span class="row">
                     <span class="col-12" id="welcoming-text">Hi, I am Suman Lama
                     </span>
                 </span>
+                <br>
+                <br>
+                <span class="row justify-content-center " id="intro-about-button">
+                    <a href="#bio-section" class="col-8" id="about-button">
+                        <span id="about-button-text">about me</span>
+                    </a>
+                </span>
             </div>
-            <div class="col-12 text-center" id="intro-about-button"><a id="about-button"><span >About Me</span></a></div>
+
         </section>
 
         <!-- BIO SECTION -->
-        <section class="row justify-content-center align-content-center fade-in sections margin-full-height px-0" id="bio-section">
+        <section class="row justify-content-center align-content-center fade-in sections margin-full-height px-0"
+            id="bio-section">
 
             <!-- BIO WRAPPER -->
             <div class="col-12 col-md-2 " id="bio-wrapper">
@@ -149,7 +142,8 @@
                             <a onclick="openSite('files/CV-Website.pdf')"
                                 class="row z-ind b-radius-2 no-borders justify-content-center align-content-center roboto-300 "
                                 id="resume-download-button">
-                                <span class="button-text-shadows " style="text-decoration: none;"></span>Download Resume</span>
+                                <span class="button-text-shadows " style="text-decoration: none;"></span>Download
+                                Resume</span>
                             </a>
                         </div>
                 </div>
@@ -159,10 +153,18 @@
             <div class="col-8 col-md-4 px-0 b-radius-2 fadeIn" id="bio-profile-image-wrapper">
                 <!-- PROFILE IMAGE -->
                 <div class="justify-content-center row m-top-small " id="profile-image">
-                    <img class="b-radius-2" id="profile-image-image" src="imgs/prof-pic.jpg"
-                        alt="My Profile Picture">
+                    <img class="b-radius-2" id="profile-image-image" src="imgs/prof-pic.jpg" alt="My Profile Picture">
                 </div>
             </div>
+
+            <!-- TO SKILLS SECTION BUTTON -->
+            <div class="row justify-content-center" id="to-skills-button-wrapper">
+                <a class="col-12"
+                    href="#skills-section" class="col-8" id="to-skills-button">
+                    <span id="to-skills-button-text">My
+                        skills</span>
+                    </a>
+                </div>
 
         </section>
 
@@ -210,7 +212,7 @@
                 </div>
 
             </div>
-            <span class="col-12 text-center m-top-small z-ind header-2" id="skills-header">SKILLS</span>
+            <!-- <span class="col-12 text-center m-top-small z-ind header-2" id="skills-header">SKILLS</span> -->
         </section>
 
         <!-- WORKS THUMBNAIL -->

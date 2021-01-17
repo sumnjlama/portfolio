@@ -167,7 +167,6 @@ a:active {
 #topbar-contents-wrapper {
     max-width: 1800px;
     /* background-color: #ffffff7e; */
-    cursor: pointer;
 }
 
 
@@ -260,6 +259,7 @@ a:active {
 }
 
 .ham-menu-wrapped {
+    cursor: pointer;
     /* background-color: red; */
     height: 60px;
     width: 60px;
@@ -281,19 +281,22 @@ a:active {
     justify-content: space-around;
 }
 
-#ham-button {
-    background-color: white;
-    box-shadow: 0px 1px 2px #2020204b;
-    
+.ham-menu-wrapped:hover > div {
+    background-color: #cfbd1b; 
+}
 
+#ham-button {
+    /* background-color: rgb(255, 255, 255); */
+    /* border:4px solid #defa83; */
+    /* box-shadow: 0px 1px 2px #2020204b; */
 }
 
 .ham-menu {
-    height: 8px;
+    height: 7px;
     width: 100%;
-    background-color: #f57966;
+    /* background-color: #f57966; */
+    background-color: #f1e048; 
     box-shadow: 0px 1px 2px #2020204b;
-
     display: block;
     border-radius: 3px;
 }
@@ -305,15 +308,14 @@ a:active {
 }
 
 #logo {
-    /* text-shadow: 0px 1px 2px #2020204b; */
-    font-size: 50px;
+    cursor: default;
+    box-shadow: 0px 1px 2px #2020204b;    
+    text-shadow: 0px 1px 2px #2020202f;
+    font-size: 40px;
     font-weight: 500;
-    /* background-color: purple; */
-    /* color: #eeeeee; */
     color: #f57966;
-    padding: 2px;
-    /* border: 3px solid #eeeeee;  */
-    background-color: #eeeeee;
+    padding: 5px;
+    background-color: #ffffff;
     border-radius: 5px;
     -webkit-transition: border 200ms linear;
     -o-transition: border 200ms linear;
@@ -340,8 +342,6 @@ a:active {
     padding: 0;
     margin: 0;
 }
-
-
 
 .pink,
 .pink:visited,
@@ -409,9 +409,8 @@ a:active {
 /* Intro Page */
 
 #intro-section {
-    display: ;
-    padding: 10px;
-    height: 90vh;
+    padding: 20px;
+    height: 100vh;
     /* background-color: #ffffff;*/
     background: hsla(31, 93%, 61%, 1);
 
@@ -424,26 +423,36 @@ a:active {
     filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#F89F41", endColorstr="#EB7721", GradientType=1);
 }
 
-
 #welcoming-text {
-    color: #eeeeee;
-    text-shadow: 0px 1px 2px #2020204b;
+    color: #ffffff;
+    text-shadow: 0px 1px 2px #20202049;
     font-family: Roboto, Arial, Helvetica, sans-serif !important;
-    font-size: 14vmin;
+    font-size: 15vmin;
     cursor: default;
-    font-weight: 500;
-}
-
-#intro-about-button{
-    width: 100%;
-    height: 14vmin;
-    background-color: pink;
+    font-weight: 600;
+    line-height: 1.2;
 }
 
 #about-button {
-    width: 70vmin;
-    height: 14vmin;
-    background-color: blue;
+    border: 4px solid #f1e048;
+    box-shadow: 0px 1px 3px #2727274b;
+    border-radius: 4vmin;
+    overflow: hidden;
+}
+
+#about-button:hover {
+    background-color: #f1e048;
+}
+
+#about-button:hover>span {
+    color: #ffffff;
+}
+
+#about-button-text {
+    font-size: 10vmin;
+    font-weight: 500;
+    color: #f1e048;
+    text-shadow: 0px 1px 2px #2727274b;
 }
 
 /*  */
@@ -470,6 +479,10 @@ a:active {
     max-width: 450px;
     line-height: 1.6;
     font-size: 16px;
+}
+
+#to-skills-button-wrapper{
+
 }
 
 /*  */
@@ -780,6 +793,14 @@ ul>li {
 
 @media (min-width: 576px) {
 
+    #logo {
+        font-size: 55px;
+    }
+
+    .ham-menu-wrapped {
+        width: 80px;
+    }
+
     #topbar-section {
         padding-left: 50px;
         padding-right: 50px;
@@ -862,6 +883,14 @@ ul>li {
     #profile-image-image {
         object-fit: cover;
         animation: fadeIn 500ms forwards linear;
+    }
+
+    #skills-section{
+        height: 100vh;
+    }
+
+    .skills-sect-home{
+        height: 100%;
     }
 
     .fig-skill {
@@ -968,8 +997,7 @@ ul>li {
         max-width: 500px !important;
     }
 
-    #welcoming-text {
-    }
+    #welcoming-text {}
 
     #intro-section {}
 

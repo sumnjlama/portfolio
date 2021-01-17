@@ -110,3 +110,14 @@ $('#topbar-contents-mobile-navs-wrapper #mobile-navs-menu a').on('click', functi
     $("#topbar-contents-mobile-navs-wrapper ").addClass("mobile-nav-close");
     event.preventDefault();
 });
+
+$('#intro-section #intro-about-button a, #bio-section #to-skills-button-wrapper a').on('click', function (event) {
+
+            var $anchor = $(this);
+            // if ($anchor.attr('href') === "#bio-section") {
+            $('html, body').animate({
+                scrollTop: $($anchor.attr('href')).offset().top
+            }, 1500);
+
+        // }
+    });
