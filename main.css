@@ -361,7 +361,7 @@ a:active {
     width: 140px;
     height: 40px;
     color: white !important;
-    background: rgba(229, 104, 40, 0.97);
+    background: hsla(26, 83%, 53%, 1);
     -webkit-box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.164);
     box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.15);
 
