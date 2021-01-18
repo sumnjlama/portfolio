@@ -36,10 +36,9 @@
 <body>
     <div class="container-fluid">
 
-        <!-- TOP SECTION: TITLE AND NAV BUTTONS -->
-        <section class="row justify-content-center z-ind fade-in" id="topbar-section">
-
-            <div class="col-12">
+        <!-- FILLER -->
+        <section class="row align-items-center justify-content-center z-ind fade-in" id="intro-section">
+            <div class="col-12 align-self-start text-center">
                 <div class="row justify-content-center align-items-center" id="topbar-contents-wrapper">
 
                     <!-- HIDDEN NAV -->
@@ -69,7 +68,7 @@
                     </div>
 
                     <!-- SL -->
-                    <div class="col col-lg-6 mb-0 text-lg-left pl-lg-0 fade-in" id="topbar-contents-logo">
+                    <div class="col col-lg-6 mb-0 text-left fade-in" id="topbar-contents-logo">
                         <a class="" id="logo">SL</a>
                     </div>
 
@@ -85,12 +84,7 @@
 
                 </div>
             </div>
-
-        </section>
-
-        <!-- FILLER -->
-        <section class="row align-items-center justify-content-center z-ind fade-in" id="intro-section">
-            <div class="col-12 text-center" style="color: white;">
+            <div class="col-12 align-self-stretch text-center" style="color: white;">
                 <span class="row">
                     <span class="col-12" id="welcoming-text">Hi, I am Suman Lama
                     </span>
@@ -107,13 +101,13 @@
         </section>
 
         <!-- BIO SECTION -->
-        <section class="row justify-content-center align-content-center fade-in sections margin-full-height px-0"
-            id="bio-section">
+        <section class="row sections justify-content-center align-content-center fade-in  px-0" id="bio-section">
 
             <!-- BIO WRAPPER -->
-            <div class="col-12 col-md-2 " id="bio-wrapper">
+            <div class="col-12 col-md-2 padding-full-height" id="bio-wrapper">
+
                 <!-- PROFILE -->
-                <div class="row px-3">
+                <div class="row px-4">
 
                     <!-- PROFILE HEADING -->
                     <h1 class="text-left dark-c " id="bio-header">I'm a Digital and Web
@@ -138,7 +132,7 @@
                         sports.
 
                         <!-- DOWNLOAD RESUME BUTTON -->
-                        <div class="m-top-small z-ind col-12 d-flex justify-content-center">
+                        <div class="p-top-small z-ind col-12 d-flex justify-content-center">
                             <a onclick="openSite('files/CV-Website.pdf')"
                                 class="row z-ind b-radius-2 no-borders justify-content-center align-content-center roboto-300 "
                                 id="resume-download-button">
@@ -150,34 +144,32 @@
             </div>
 
             <!-- PROFILE IMAGE WRAPPER -->
-            <div class="col-8 col-md-4 px-0 b-radius-2 fadeIn" id="bio-profile-image-wrapper">
+            <div class="col-8  col-md-4 px-0 b-radius-2 fadeIn" id="bio-profile-image-wrapper">
                 <!-- PROFILE IMAGE -->
-                <div class="justify-content-center row m-top-small " id="profile-image">
+                <div class="justify-content-center row p-top-small " id="profile-image">
                     <img class="b-radius-2" id="profile-image-image" src="imgs/prof-pic.jpg" alt="My Profile Picture">
                 </div>
             </div>
 
             <!-- TO SKILLS SECTION BUTTON -->
-            <div class="row justify-content-center" id="to-skills-button-wrapper">
-                <a class="col-12"
-                    href="#skills-section" class="col-8" id="to-skills-button">
+            <span class="row justify-content-center padding-full-height" id="to-skills-button-wrapper">
+                <a class="col-8 text-center" href="#skills-section" id="to-skills-button">
                     <span id="to-skills-button-text">My
                         skills</span>
-                    </a>
-                </div>
-
+                </a>
+            </span>
         </section>
 
         <!-- SKILL AND RESUME SECTION -->
         <section class="row justify-content-center fade-in m-top-big" id="skills-section">
 
             <!-- BACKGROUND -->
-            <span class="span-section shadow-up shadow-down skills-sect-home ">
+            <span class="shadow-up shadow-down skills-sect-home  ">
             </span>
 
             <!-- SKILLS-LISTS -->
-            <div class="col-12 z-ind text-center m-top-small" id="skills-wrapper">
-                <div class="row justify-content-center">
+            <div class="col-12 z-ind text-center">
+                <div class="row justify-content-center align-content-center" id="skills-wrapper">
                     <!-- PHOTOSHOP ICON -->
                     <figure class="figure fig-skill col-4 text-center ">
                         <img class="figure-img fig-skill-img" src="imgs/icons/skills/ps.png" alt="">
@@ -212,110 +204,40 @@
                 </div>
 
             </div>
-            <!-- <span class="col-12 text-center m-top-small z-ind header-2" id="skills-header">SKILLS</span> -->
+            <!-- <span class="col-12 text-center p-top-small z-ind header-2" id="skills-header">SKILLS</span> -->
         </section>
 
         <!-- WORKS THUMBNAIL -->
-        <section class="m-top-big" id="works-section">
-            <span class="row justify-content-center header-2" id="works-header">Portfolio</span>
-            <div class="m-top-small row justify-content-center fade-in">
-                <div class="col-8 px-0 mx-0">
-                    <div class="text-center row justify-content-around align-content-between px-0"
-                        id="works-thumbnails">
-                        <!--  -->
-                        <div class="mt-lg-0 col-12 mx-0 px-0 work-wid">
-                            <div
-                                class="d-flex px-0 card-wid works-border b-radius-6 justify-content-center align-items-center ">
-                                <div class="card work-img-border work-thumbnail-image b-radius-6">
-                                    <img class="card-img b-radius-6 " src="imgs/Work-thumbnails/JHR webpage.png"
-                                        alt="work 3">
-                                    <span class="card-img-overlay hide b-radius-6">
-                                        <p class="work-titles">JHR Nature Cure</p>
-                                        <p>A CMS Website with added custom HTML and CSS codes.</p>
-                                        <a class="work-link-button"
-                                            onclick="openSite('https://www.jhrnaturecure.com/')">See
-                                            more</a>
-                                    </span></div>
-                            </div>
-                        </div>
+        <section class="row justify-content-center p-top-big" id="works-section">
+            <span class="col-12 text-center header-2" id="works-header">Portfolio</span>
+            <div class="p-top-small col-12 fade-in">
+                <div class="row justify-content-center">
 
-                        <!--  -->
-                        <div class="mt-lg-0 col-12 mx-0 px-0 work-wid">
-                            <div
-                                class="d-flex px-0 card-wid works-border b-radius-6 justify-content-center align-items-center ">
-                                <div class="card work-thumbnail-image  work-img-border b-radius-6">
-                                    <img class="card-img  b-radius-6 " src="imgs/Work-thumbnails/snowdonia.png"
-                                        alt="work 3">
-                                    <span class="card-img-overlay hide b-radius-6">
-                                        <p class="work-titles">Snowdonia, Snowdon</p>
-                                        <p>A photo gallery website built using HTML, CSS and JS.</p>
-                                        <a class="work-link-button"
-                                            onclick="openSite('https://sumnjlama.github.io/projectSnowdon/index.html')">See
-                                            more</a>
-                                    </span>
+                            <!--  -->
+                            <div class="card">
+                                <div
+                                    class="card-wid works-border b-radius-6 justify-content-center align-items-center ">
+                                    <div class="card work-img-border work-thumbnail-image b-radius-6">
+                                        <img class="card-img b-radius-6 " src="imgs/Work-thumbnails/JHR webpage.png"
+                                            alt="work 3">
+                                        <span class="card-img-overlay hide b-radius-6">
+                                            <p class="work-titles">JHR Nature Cure</p>
+                                            <p>A CMS Website with added custom HTML and CSS codes.</p>
+                                            <a class="work-link-button"
+                                                onclick="openSite('https://www.jhrnaturecure.com/')">See
+                                                more</a>
+                                        </span></div>
                                 </div>
                             </div>
-                        </div>
 
-                        <!--  -->
-                        <div class="mt-lg-0 col-12 mx-0 px-0 work-wid">
-                            <div
-                                class="d-flex px-0 card-wid works-border b-radius-6 justify-content-center align-items-center ">
-                                <div class="card work-thumbnail-image work-img-border b-radius-6">
-                                    <img class="card-img b-radius-6 " src="imgs/Work-thumbnails/TB.png" alt="work 3">
-                                    <span class="card-img-overlay hide b-radius-6">
-                                        <p class="work-titles">Triple Booster</p>
-                                        <p>Branding design for a health supplement capsules from JHR nature cure.</p>
-                                        <a class="work-link-button"
-                                            onclick="openSite('https://www.behance.net/gallery/84703685/Triple-Booster-Design-project')">See
-                                            more</a>
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!--  -->
-                        <div class="mt-lg-0 col-12 mx-0 px-0 work-wid">
-                            <div
-                                class="d-flex px-0 card-wid works-border b-radius-6 justify-content-center align-items-center ">
-                                <div class="card work-thumbnail-image work-img-border b-radius-6">
-                                    <img class="card-img  b-radius-6 " src="imgs/Work-thumbnails/TBplus.png"
-                                        alt="work 3">
-                                    <span class="card-img-overlay hide b-radius-6">
-                                        <p class="work-titles">Triple Booster Plus</p>
-                                        <p>Branding design for a health supplement capsules from JHR nature cure.</p>
-                                        <a class="work-link-button"
-                                            onclick="openSite('https://www.behance.net/gallery/106544981/Triple-Booster-PLUS')">See
-                                            more</a>
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!--  -->
-                        <div class="mt-lg-0 col-12 mx-0 px-0 work-wid">
-                            <div
-                                class="d-flex px-0 card-wid works-border b-radius-6 justify-content-center align-items-center ">
-                                <div class="card work-thumbnail-image work-img-border b-radius-6">
-                                    <img class="card-img  b-radius-6 " src="imgs/Work-thumbnails/RawGold.png"
-                                        alt="work 3">
-                                    <span class="card-img-overlay hide b-radius-6">
-                                        <p class="work-titles">Raw Gold</p>
-                                        <p>Branding design for an organic protein powder from JHR nature cure.</p>
-                                        <a class="work-link-button"
-                                            onclick="openSite('https://www.behance.net/gallery/106547429/RAW-GOLD')">See
-                                            more</a>
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                            <!--  -->
+                            
                 </div>
             </div>
         </section>
 
         <!-- ICONS: BEHANCE, LINKEDiN, GITHUB -->
-        <section class="row justify-content-center m-top-big align-content-center z-ind fade-in mx-0"
+        <section class="row justify-content-center p-top-big align-content-center z-ind fade-in mx-0"
             id="icons-section">
             <figure class="figure m-0 text-center" id="icons-wrapper">
                 <!-- BEHANCE ICON -->
@@ -376,34 +298,45 @@
         </section>
 
         <!-- CONTACT FORMS -->
-        <section class="m-top-big row justify-content-center fade-in mx-0 px-0" id="contact-section">
+        <section class=" row justify-content-center align-content-center m-top-big fade-in mx-0 px-0" id="contact-section">
 
             <!-- BACKGROUND -->
             <span class="span-section shadow-up shadow-down skills-sect-contact">
             </span>
 
-            <div class="col-12 z-ind m-top-small">
+            <!-- HEADER -->
+            <div class="col-12 z-ind p-top-small">
                 <div class="row justify-content-center text-center mt-4 mt-md-0 px-0 mx-0">
                     <p id="contact-header">Send me a message:</p>
                 </div>
             </div>
-            <form class="col-10 col-md-6 col-xl-4 m-top-small z-ind mx-0 px-0" action="https://formspree.io/f/mleonaay"
+
+            <!-- FORMS -->
+            <form class="col-10 col-md-6 col-xl-4 p-top-small z-ind mx-0 px-0" action="https://formspree.io/f/mleonaay"
                 method="POST" autocomplete="off" id="my-form">
+
+                <!-- FIRST NAME -->
                 <div><label class="white-text" for="name-input">Your name</label>
                     <input id="name-input" class="form-control" type="text" name="name" required></div>
 
+                <!-- EMAIL -->
                 <div><label class="mt-4 white-text" for="email-input">Email address</label>
                     <input id="email-input" class="form-control" type="text" name="email" required></div>
 
+                <!-- MESSAGE TEXTAREA -->
                 <div><label class="mt-4 white-text" for="message-box">Message me</label>
                     <textarea id="message-box" class="form-control" name="message" required></textarea></div>
 
+                <!-- SEND BUTTON -->
                 <button class="mt-5 nav-c btn-lg btn-block " type="submit" id="form-submit-button">Send</button>
 
             </form>
 
+            <!-- SUBMIT STATUS -->
             <div class="col-12 text-center pt-4" id="status"></div>
 
+            <!-- FOOTER -->
+            <footer class="col-12 z-ind text-center white-text ">Website made by Suman Lama</footer>
         </section>
 
         <div class="" id="up-button">
@@ -427,7 +360,6 @@
             </svg>
         </div>
 
-        <footer class="col-12 z-ind text-center white-text m-top-small">Website made by Suman Lama</footer>
     </div>
 </body>
 

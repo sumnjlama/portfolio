@@ -91,16 +91,16 @@ function closeNav() {
 $('#topbar-contents-mobile-navs-wrapper #mobile-navs-menu a').on('click', function (event) {
 
     var $anchor = $(this);
-    if ($anchor.attr('href') === "#works-section") {
-        $('html, body').animate({
-            scrollTop: $($anchor.attr('href')).offset().top - 75
-        }, 1500);
-    }
-    if ($anchor.attr('href') === "#contact-section") {
+    // if ($anchor.attr('href') === "#works-section") {
+    //     $('html, body').animate({
+    //         scrollTop: $($anchor.attr('href')).offset().top - 75
+    //     }, 1500);
+    // }
+    // if ($anchor.attr('href') === "#contact-section") {
         $('html, body').animate({
             scrollTop: $($anchor.attr('href')).offset().top
         }, 1500);
-    }
+    // }
 
     setTimeout(function () {
         $("#topbar-contents-mobile-navs-wrapper ").addClass("mobile-nav-hide");

@@ -1,0 +1,51 @@
+<!-- TOP SECTION: TITLE AND NAV BUTTONS -->
+        <section class="row justify-content-center z-ind fade-in" id="topbar-section">
+
+            <div class="col-12">
+                <div class="row justify-content-center align-items-center" id="topbar-contents-wrapper">
+
+                    <!-- HIDDEN NAV -->
+                    <div class="col-12 mt-0 pt-2 pb-2 z-ind mobile-nav-close mobile-nav-hide"
+                        id="topbar-contents-mobile-navs-wrapper">
+
+                        <!-- CLOSE BUTTON -->
+                        <div id="mobile-navs-close-button" onclick="closeNav();" class="">
+                            <div id="close-button-wrapper" onclick="">
+                                <div class="menu-close-button x1"></div>
+                                <div onclick="" class="menu-close-button x2"></div>
+                            </div>
+                        </div>
+
+                        <!-- NAV MENUS -->
+                        <div class="row justify-content-around mt-4" id="mobile-navs-menu">
+                            <!-- PORTFOLIO -->
+                            <a href="#works-section" class=" align-self-center nav-buttons roboto-300">
+                                <span class=" ">Portfolio</span>
+                            </a>
+                            <!-- CONTACT -->
+                            <a href="#contact-section" class="align-self-center nav-buttons roboto-300">
+                                <span class=" ">Contact Me</span>
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <!-- SL -->
+                    <div class="col col-lg-6 mb-0 text-lg-left pl-lg-0 fade-in" id="topbar-contents-logo">
+                        <a class="" id="logo">SL</a>
+                    </div>
+
+                    <!-- HAM BUTTONS -->
+                    <div class="col d-flex justify-content-end align-items-center fade-in"
+                        id="topbar-contents-ham-wrapper">
+                        <div class="ham-menu-wrapped px-1" id="ham-button" onclick="showNav()">
+                            <div class="ham-menu" id="ham-bar-1"></div>
+                            <div class="ham-menu" id="ham-bar-2"></div>
+                            <div class="ham-menu" id="ham-bar-3"></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
