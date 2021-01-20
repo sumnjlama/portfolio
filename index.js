@@ -157,7 +157,7 @@ var slideWorksText = TweenMax.fromTo("#works-header", 1, {
 var slideWorksText_scene = new ScrollMagic.Scene({
     triggerElement: '#works-section',
     triggerHook: 1,
-    duration: 600,
+    duration: 400,
     offset: 500,
 })
 .setTween(slideWorksText)
