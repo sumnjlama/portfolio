@@ -11,10 +11,6 @@ body {
     overflow: hidden;
 }
 
-
-section {
-}
-
 ::-webkit-scrollbar {
     display: none;
 }
@@ -689,9 +685,6 @@ a:active {
     .padding-top-mobile {
         padding-top: 0px;
     }
-
-    #bio-wrapper {}
-
 
     #bio-profile-image-wrapper {
         overflow: hidden;
