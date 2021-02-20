@@ -1,3 +1,45 @@
+#bio-wrapper {
+    opacity: 0;
+    transform: translateX(-50%);
+}
+
+#bio-profile-image-wrapper {
+    opacity: 0;
+    transform: translateX(50%);
+}
 
 
+/* profile picture slide in left */
+.slide-left {
+    opacity: 1 !important;
+    transform: translateX(0%) !important;
+    transition: transform 800ms cubic-bezier(.42, .21, .51, .96);
+    animation: fadeIn 700ms forwards ease-in;
+}
 
+
+/* bio paragraph slide in right */
+.slide-right {
+    opacity: 1 !important;
+    transform: translateX(0%) !important;
+    transition: transform 800ms cubic-bezier(.42, .21, .51, .96);
+    animation: fadeIn 700ms forwards ease-in;
+}
+
+
+/* Skills text */
+#skills-text,
+#works-header {
+    opacity: 0;
+}
+
+
+/* fade In */
+.reveal-self {
+    animation: fadeIn 900ms forwards ease-in;
+}
+
+
+#skills-text {
+    opacity: 0;
+}

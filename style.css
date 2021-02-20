@@ -49,10 +49,6 @@ a:active {
 }
 
 
-/*  */
-/*  */
-/* MARGINS */
-
 
 /*  */
 /*  */
@@ -133,7 +129,6 @@ a:active {
 
 #mobile-navs-close-button {
     width: 45px;
-    /* background-color: grey; */
     height: 50px;
     cursor: pointer;
 }
@@ -200,10 +195,8 @@ a:active {
 
 .ham-menu-wrapped {
     cursor: pointer;
-    /* background-color: red; */
     height: 60px;
     width: 60px;
-    /*background-color: violet;*/
     border-radius: 5px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -228,7 +221,6 @@ a:active {
 .ham-menu {
     height: 7px;
     width: 100%;
-    /* background-color: #f57966; */
     background-color: #f1e048;
     display: block;
     border-radius: 3px;
@@ -370,13 +362,11 @@ a:active {
 
 #to-skills-button-wrapper {
     height: 40px;
-    /* background-color: yellow; */
 }
 
 #to-skills-button {
     width: 250px;
     height: 40px;
-    /* background-color: red; */
     border: 3px solid yellow;
 }
 
@@ -512,11 +502,6 @@ a:active {
 
 .card-wid:hover {
     background: #ce4416;
-
-    /* background: -moz-linear-gradient(42deg, rgba(13, 41, 158, 0.9) 0%, rgba(52, 77, 178, 0.93) 38%, rgba(222, 124, 72, 0.97) 74%, rgba(229, 104, 40, 0.97) 100%);
-    background: -webkit-linear-gradient(42deg, rgba(13, 41, 158, 0.9) 0%, rgba(52, 77, 178, 0.93) 38%, rgba(222, 124, 72, 1) 74%, rgba(229, 104, 40, 1) 100%);
-    background: linear-gradient(42deg, rgba(13, 41, 158, 1) 0%, rgba(52, 77, 178, 1) 28%, rgba(222, 125, 72, 1) 74%, rgba(229, 103, 40, 1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0d299e", endColorstr="#e56828", GradientType=1); */
 }
 
 .card-wid:hover>.card>.hide {
@@ -706,10 +691,7 @@ color: #f1e048;
         width: 100%;
     }
 
-    
-
-
-    #bio-wrapper {
+        #bio-wrapper {
         position: relative;
         right: 20px;
     }
@@ -804,36 +786,62 @@ color: #f1e048;
         background-color: #FF5B24;
         color: white;
     }
-
-    /*  */
-    /*  */
-    /* SKILLS SECTION */
-
-
-
-    /*  */
-    /*  */
-    /* WORKS */
-
-
     
 
 }
 
 
+/* FOR SCROLLMAGIC STYLE */
+#bio-wrapper {
+    opacity: 0;
+    transform: translateX(-50%);
+}
 
+#bio-profile-image-wrapper {
+    opacity: 0;
+    transform: translateX(50%);
+}
+
+
+/* profile picture slide in left */
+.slide-left {
+    opacity: 1 !important;
+    transform: translateX(0%) !important;
+    transition: transform 800ms cubic-bezier(.42, .21, .51, .96);
+    animation: fadeIn 700ms forwards ease-in;
+}
+
+
+/* bio paragraph slide in right */
+.slide-right {
+    opacity: 1 !important;
+    transform: translateX(0%) !important;
+    transition: transform 800ms cubic-bezier(.42, .21, .51, .96);
+    animation: fadeIn 700ms forwards ease-in;
+}
+
+
+/* Skills text */
+#skills-text,
+#works-header {
+    opacity: 0;
+}
+
+
+/* fade In */
+.reveal-self {
+    animation: fadeIn 900ms forwards ease-in;
+}
+
+
+#skills-text {
+    opacity: 0;
+}
 
 
 
 /*  */
 /*  */
-/* MEDIA Q: 1200 */
-
-
-
-
-
-
 /* KEYFRAMES */
 @-webkit-keyframes fadeOut {
     from {

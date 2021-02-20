@@ -6,18 +6,17 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Suman Lama</title>
-    <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="ScreenOrientation" content="autoRotate:disabled">
     <meta name="author" content="Suman Lama">
-    <meta name="description" content="Website coded by Suman Lama. I'm a digital and web designer. I build websites through Html, Css and Javascript. I also use frameworks and libraries such as jQuery and boostrap. I am also a graphic designer and fine artist. I am skilled in ">
+    <meta name="description"
+        content="Website coded by Suman Lama. I'm a digital and web designer. I build websites through Html, Css and Javascript. I also use frameworks and libraries such as jQuery and boostrap. I am also a graphic designer and fine artist. I am skilled in ">
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="imgs/icons/favicon.png">
 
     <!-- CUSTOM CSS -->
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="scroll.css">
+    <link rel="stylesheet" href="style.css">
 
 
     <!-- BOOTSTRAP CSS -->
@@ -32,20 +31,22 @@
 <body>
     <div class="container-fluid" id="container">
 
-        <!-- FILLER -->
+        <!-- INTRO -->
         <section class="row align-items-center justify-content-center z-ind fade-in" id="intro-section">
-            <div class="col-12 align-self-start text-center">
-                <div class="row justify-content-center align-items-center" id="topbar-contents-wrapper">
+            <div class="col-12 align-self-start text-center" id="topbar-contents-wrapper">
+                <div class="row justify-content-center align-items-center">
 
                     <!-- HIDDEN NAV -->
                     <div class="col-12 mt-0 pt-2 pb-2 z-ind mobile-nav-close mobile-nav-hide"
                         id="topbar-contents-mobile-navs-wrapper">
 
                         <!-- CLOSE BUTTON -->
-                        <div id="mobile-navs-close-button" onclick="closeNav();" class="">
-                            <div id="close-button-wrapper" onclick="">
-                                <div class="menu-close-button x1"></div>
-                                <div onclick="" class="menu-close-button x2"></div>
+                        <div class="row justify-content-center ">
+                            <div id="mobile-navs-close-button" onclick="closeNav();" class="">
+                                <div id="close-button-wrapper" onclick="">
+                                    <div class="menu-close-button x1"></div>
+                                    <div onclick="" class="menu-close-button x2"></div>
+                                </div>
                             </div>
                         </div>
 
@@ -64,9 +65,9 @@
                     </div>
 
                     <!-- SL -->
-                    <div class="col col-lg-6 mb-0 text-left fade-in" id="topbar-contents-logo">
+                    <!-- <div class="col col-lg-6 mb-0 text-left fade-in" id="topbar-contents-logo">
                         <a class="" id="logo">SL</a>
-                    </div>
+                    </div> -->
 
                     <!-- HAM BUTTONS -->
                     <div class="col d-flex justify-content-end align-items-center fade-in"
@@ -80,7 +81,7 @@
 
                 </div>
             </div>
-            <div class="col-12 align-self-stretch text-center" style="color: white;">
+            <div class="col-12 align-self-center text-center" style="color: white;">
                 <span class="row">
                     <span class="col-12" id="welcoming-text">Hi, I am Suman Lama
                     </span>
@@ -96,15 +97,16 @@
 
         </section>
 
+
         <!-- BIO SECTION -->
         <section class="row sections justify-content-center align-content-center fade-in padding-top-mobile "
             id="bio-section">
 
             <!-- BIO WRAPPER -->
-            <div class="col-12 col-md-8 p-2 p-md-5 " id="bio-wrapper">
+            <div class="col-12 col-md-8 p-2 py-md-5 pr-md-5 pl-md-0 d-flex align-items-stretch" id="bio-wrapper">
 
                 <!-- PROFILE -->
-                <div class="row px-4 align-content-stretch">
+                <div class="row px-4 px-md-1 align-content-center">
 
                     <!-- PROFILE HEADING -->
                     <h1 class="text-left dark-c " id="bio-header">I'm a Digital and Web Designer.</h1>
@@ -112,15 +114,14 @@
                     <p class="text-left mb-0 mt-3" id="">I am skilled in digital,
                         graphics, web
                         design and
-                        basic front-end development. My passion in producing creative contents comes from my aim to
-                        transform my clients’ visions into reality through elements of creativity
-                        and usability.
+                        basic front-end development. My passion in producing creative contents comes from my desire to
+                        transform my clients’ visions into reality and achieve results with creativity
+                        and usability. 
                         <br>
                         <br>
                         Forever exploring ways to self-improve, I am an inquisitive and a motivated person who is
                         keen
-                        to learn and overcome problems. I self-taught myself to code for 2
-                        years and at present, I build websites using Html, Css and Javascript.
+                        to learn and overcome problems with 2 years of experience in brand and graphic designing. I also design and build websites using Html, Css and Javascript.
                         <br>
                         <br>
                         Other than my obsession with work, I also have a keen interest in music, photography, and
@@ -139,11 +140,12 @@
             </div>
 
             <!-- PROFILE IMAGE WRAPPER -->
-            <div class="col-8 col-md-3 mt-5 my-md-5 b-radius-2 px-0 fadeIn " id="bio-profile-image-wrapper">
+            <div class="col-8 col-md-3 mt-5 my-md-5 b-radius-2 px-0  " id="bio-profile-image-wrapper">
 
                 <!-- PROFILE IMAGE -->
                 <div class="justify-content-center row b-radius-2" id="profile-image">
-                    <img class="b-radius-2" id="profile-image-image" src="imgs/prof-pic.jpg" alt="My Profile Picture">
+                    <img class="img-fluid b-radius-2" id="profile-image-image" src="imgs/prof-pic.png"
+                        alt="My Profile Picture">
                 </div>
             </div>
 
@@ -159,54 +161,60 @@
 
             <!-- SKILLS-LISTS -->
             <div class="z-ind d-flex flex-wrap justify-content-center align-content-center">
-                <span class="align-self-start row justify-content-center header-2 mb-4 mb-md-3"
-                    id="skills-text">SKILLS</span>
-                <div class="align-self-start row justify-content-center align-content-start px-3 px-md-5"
+                <span class=" row justify-content-center header-2 mb-4 mb-md-3" id="skills-text">SKILLS</span>
+                <div class="align-self-start row justify-content-start align-content-start px-3 px-md-5"
                     id="skills-wrapper">
 
                     <!-- PHOTOSHOP ICON -->
-                    <figure class="figure  col-6 text-center p-4 m-0 pop">
-                        <img class="figure-img figure-skill-img" src="imgs/icons/skills/ps.png" alt="">
-                        <figcaption class="figure-style">Photoshop</figcaption>
-                    </figure>
+                    <div class="d-flex col-6 p-2 justify-content-center align-content-center m-0 flex-wrap">
+                        <div class="d-flex p-2 justify-content-center figure-image-wrapper">
+                            <img class=" align-self-center figure-skill-img" src="imgs/icons/skills/ps.png" alt="">
+                        </div>
+                        <span class="figure-style px-3">Photoshop</span>
+
+                    </div>
 
                     <!-- HTML ICON -->
-                    <figure class="figure col-6 text-center p-4 m-0 pop">
-                        <img class="figure-img figure-skill-img-smalls" src="imgs/icons/skills/html.png" alt="">
-                        <figcaption class="figure-style">Html</figcaption>
-                    </figure>
+                    <div class="d-flex col-6 p-2  justify-content-center align-content-center m-0 flex-wrap ">
+                        <div class="d-flex p-2 justify-content-center figure-image-wrapper">
+                            <img class="figure-skill-img-smalls" src="imgs/icons/skills/html.png" alt=""></div>
+                        <span class="figure-style px-3">Html</span>
+                    </div>
 
                     <!-- ILLUSTRATOR ICON -->
-                    <figure class="figure  col-6 text-center p-4 m-0 pop">
-                        <img class="figure-img figure-skill-img" src="imgs/icons/skills/illustrator.png" alt="">
-                        <figcaption class="figure-style">Illustrator</figcaption>
-                    </figure>
+                    <div class="d-flex col-6  p-2 justify-content-center align-content-center m-0 flex-wrap">
+                        <div class="d-flex p-2 justify-content-center figure-image-wrapper">
+                            <img class="figure-skill-img" src="imgs/icons/skills/illustrator.png" alt=""></div>
+                        <span class="figure-style px-3">Illustrator</span>
+                    </div>
 
                     <!-- CSS ICON -->
-                    <figure class="figure col-6 text-center p-4 m-0 pop">
-                        <img class="figure-img figure-skill-img-smalls" src="imgs/icons/skills/css.png" alt="">
-                        <figcaption class="figure-style">Css</figcaption>
-                    </figure>
+                    <div class="d-flex col-6 p-2  justify-content-center align-content-center m-0 flex-wrap">
+                        <div class="d-flex p-2 justify-content-center figure-image-wrapper">
+                            <img class="figure-skill-img-smalls" src="imgs/icons/skills/css.png" alt=""></div>
+                        <span class="figure-style px-3">Css</span>
+                    </div>
 
                     <!-- XD ICON -->
-                    <figure class="figure  col-6 text-center p-4 m-0 pop">
-                        <img class="figure-img figure-skill-img" src="imgs/icons/skills/Xd-white@2x.png" alt="">
-                        <figcaption class="figure-style">Xd</figcaption>
-                    </figure>
+                    <div class="d-flex col-6 p-2 justify-content-center align-content-center m-0 flex-wrap">
+                        <div class="d-flex p-2 justify-content-center figure-image-wrapper">
+                            <img class="figure-skill-img" src="imgs/icons/skills/Xd-white@2x.png" alt=""></div>
+                        <span class="figure-style px-3">Xd</span>
+                    </div>
 
                     <!-- JS ICON -->
-                    <figure class="figure col-6 text-center p-4 m-0 pop">
-                        <img class="figure-img figure-skill-img-smalls" src="imgs/icons/skills/js.png" alt="">
-                        <figcaption class="figure-style">JavaScript</figcaption>
-                    </figure>
-
+                    <div class="d-flex col-6  p-2 justify-content-center align-content-center m-0 flex-wrap">
+                        <div class="d-flex p-2 justify-content-center figure-image-wrapper">
+                            <img class="figure-skill-img-smalls" src="imgs/icons/skills/js.png" alt=""></div>
+                        <span class="figure-style px-3">JavaScript</span>
+                    </div>
                 </div>
 
             </div>
         </section>
 
         <!-- WORKS PORTFOLIO THUMBNAIL -->
-        <section class="row justify-content-center align-items-center  padding-top-flexi" id="works-section">
+        <section class="row justify-content-center align-items-center padding-top-flexi" id="works-section">
 
             <div class=" col-12 fade-in text-center">
                 <span class="row justify-content-center header-2 pb-4" id="works-header">Portfolio</span>
@@ -220,7 +228,8 @@
                             <img src="./imgs/Work-thumbnails/JHR webpage.png" alt="" class="card-img b-radius-2">
                             <span class="card-img-overlay hide text-center b-radius-2">
                                 <p class="works-titles">JHR Nature Cure</p>
-                                <p class="works-detail">An E-commerce website in squarespace with custom HTML and CSS codes.</p>
+                                <p class="works-detail">An E-commerce website in squarespace with custom HTML and CSS
+                                    codes.</p>
                                 <a class="works-link-button" onclick="openSite('https://www.jhrnaturecure.com/')">See
                                     more</a>
                             </span>
@@ -234,7 +243,8 @@
                             <span class="card-img-overlay hide text-center b-radius-2">
                                 <p class="works-titles">Snowdonia, Snowdon</p>
                                 <p>A photo gallery website built using HTML, CSS and JavaScript.</p>
-                                <a class="works-link-button" onclick="openSite('https://sumnjlama.github.io/projectSnowdon/index.html')">See
+                                <a class="works-link-button"
+                                    onclick="openSite('https://sumnjlama.github.io/projectSnowdon/index.html')">See
                                     more</a>
                             </span>
                         </div>
@@ -247,7 +257,8 @@
                             <span class="card-img-overlay hide text-center b-radius-2">
                                 <p class="works-titles">Triple Booster</p>
                                 <p>Branding design for a health supplement capsules from JHR nature cure.</p>
-                                <a class="works-link-button" onclick="openSite('https://www.behance.net/gallery/84703685/Triple-Booster-Design-project')">See
+                                <a class="works-link-button"
+                                    onclick="openSite('https://www.behance.net/gallery/84703685/Triple-Booster-Design-project')">See
                                     more</a>
                             </span>
                         </div>
@@ -260,7 +271,8 @@
                             <span class="card-img-overlay hide text-center b-radius-2">
                                 <p class="works-titles">Triple Booster Plus</p>
                                 <p>Branding design for a health supplement capsules from JHR nature cure.</p>
-                                <a class="works-link-button" onclick="openSite('https://www.behance.net/gallery/106544981/Triple-Booster-PLUS')">See
+                                <a class="works-link-button"
+                                    onclick="openSite('https://www.behance.net/gallery/106544981/Triple-Booster-PLUS')">See
                                     more</a>
                             </span>
                         </div>
@@ -280,69 +292,72 @@
                     </div>
                 </div>
             </div>
+
+            <!-- ICONS: BEHANCE, LINKEDiN, GITHUB -->
+            <div class="row justify-content-center align-content-center z-ind fade-in mx-0" id="icons-section">
+                <figure class="figure m-0 text-center" id="icons-wrapper">
+
+                    <!-- BEHANCE ICON -->
+                    <svg class="three-icons-normal second-c-hover"
+                        onclick="openSite('https://www.behance.net/sumanjlama')" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 97.31 59.47">
+                        <defs>
+                            <style>
+                                .cls-1 {
+                                    fill-rule: evenodd;
+                                }
+                            </style>
+                        </defs>
+                        <g id="Layer_2" data-name="Layer 2">
+                            <g id="Layer_1-2" data-name="Layer 1">
+                                <path id="Behance" class="cls-1"
+                                    d="M62.18,9.92H88V2.7H62.18V9.92Zm6.1,15.76a11.51,11.51,0,0,0-3.1,6.64h20a9.34,9.34,0,0,0-3.1-6.79,10.46,10.46,0,0,0-6.91-2.3,9.42,9.42,0,0,0-6.94,2.45ZM85.68,16a17.93,17.93,0,0,1,7.68,6.35,20.58,20.58,0,0,1,3.55,8.87,54,54,0,0,1,.39,8.52H64.9c.19,4.3,1.73,7.32,4.66,9.05A12.15,12.15,0,0,0,76,50.38a10.1,10.1,0,0,0,6.45-2,9.27,9.27,0,0,0,2.39-3H96.69q-.48,3.81-4.31,7.76-6,6.26-16.73,6.25A24.75,24.75,0,0,1,60,54.2C55.45,50.68,53.2,45,53.2,37q0-11.15,6.12-17.1t15.9-6a26.12,26.12,0,0,1,10.46,2ZM12,32.47V47.94h14.6a14.67,14.67,0,0,0,6.09-1c2.64-1.27,4-3.67,4-7.24a6.23,6.23,0,0,0-3.82-6.23,15.66,15.66,0,0,0-6-1Zm0-22.4v12.8H26.61A12.45,12.45,0,0,0,33,21.43q2.45-1.44,2.45-5.09c0-2.71-1.08-4.49-3.23-5.36a23.64,23.64,0,0,0-7.11-.91ZM44.64,6.18A14.41,14.41,0,0,1,47.4,15a12.61,12.61,0,0,1-2.78,8.54A14.37,14.37,0,0,1,40,26.88,13.44,13.44,0,0,1,47,32a14.94,14.94,0,0,1,2.34,8.5,16.46,16.46,0,0,1-2.68,9.25,16.16,16.16,0,0,1-4.26,4.57,16.76,16.76,0,0,1-6.79,2.91A42.71,42.71,0,0,1,27.1,58H0V0H29.06q11,.15,15.58,6.18Z" />
+                            </g>
+                        </g>
+                    </svg>
+
+                    <!-- LINKEDIN ICON -->
+                    <svg class="three-icons-mid second-c-hover"
+                        onclick="openSite('https://linkedin.com/in/suman-lama-96b6a9185')"
+                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 73.96 65.75">
+                        <defs>
+                            <style>
+                                .cls-1 {
+                                    fill-rule: evenodd;
+                                }
+                            </style>
+                        </defs>
+                        <g id="Layer_2" data-name="Layer 2">
+                            <g id="Layer_1-2" data-name="Layer 1">
+                                <path id="LinkedIn" class="cls-1"
+                                    d="M74,65.75H57.61V42.63c0-6.05-2.55-10.18-8.18-10.18a8.22,8.22,0,0,0-7.8,5.48,9.88,9.88,0,0,0-.35,3.65V65.75H25.08s.21-40.94,0-44.67h16.2v7c.95-3.06,6.13-7.44,14.38-7.44,10.25,0,18.3,6.43,18.3,20.26V65.75ZM8.71,15.5H8.6C3.38,15.5,0,12.08,0,7.75S3.48,0,8.81,0s8.58,3.33,8.69,7.74S14.12,15.5,8.71,15.5ZM1.87,21.08H16.28V65.75H1.87V21.08Z" />
+                            </g>
+                        </g>
+                    </svg>
+
+                    <!-- GITHUB ICON -->
+                    <svg class="three-icons-larger second-c-hover" onclick="openSite('https://github.com/sumnjlama')"
+                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72.87 69.78">
+                        <defs>
+                            <style>
+                                .cls-1 {
+                                    fill-rule: evenodd;
+                                }
+                            </style>
+                        </defs>
+                        <g id="Layer_2" data-name="Layer 2">
+                            <g id="Layer_1-2" data-name="Layer 1">
+                                <path id="Github" class="cls-1"
+                                    d="M36.43,0C16.31,0,0,16,0,35.77A35.84,35.84,0,0,0,24.92,69.71c1.82.33,2.49-.77,2.49-1.72s0-3.1-.05-6.08c-10.14,2.16-12.28-4.8-12.28-4.8-1.65-4.13-4-5.23-4-5.23-3.31-2.22.25-2.18.25-2.18,3.65.26,5.58,3.69,5.58,3.69,3.25,5.47,8.53,3.89,10.6,3a7.58,7.58,0,0,1,2.32-4.78c-8.09-.9-16.6-4-16.6-17.68a13.7,13.7,0,0,1,3.75-9.6,12.57,12.57,0,0,1,.36-9.46s3.06-1,10,3.66a35.26,35.26,0,0,1,18.24,0c7-4.63,10-3.66,10-3.66a12.57,12.57,0,0,1,.36,9.46,13.66,13.66,0,0,1,3.75,9.6c0,13.74-8.52,16.77-16.64,17.65,1.31,1.11,2.48,3.29,2.48,6.63,0,4.78-.05,8.64-.05,9.81,0,1,.66,2.07,2.5,1.72a35.85,35.85,0,0,0,24.9-33.94C72.87,16,56.56,0,36.43,0" />
+                            </g>
+                        </g>
+                    </svg>
+                </figure>
+            </div>
         </section>
 
 
-        <!-- ICONS: BEHANCE, LINKEDiN, GITHUB -->
-        <section class="row justify-content-center align-content-center z-ind fade-in mx-0" id="icons-section">
-            <figure class="figure m-0 text-center" id="icons-wrapper">
 
-                <!-- BEHANCE ICON -->
-                <svg class="three-icons-normal second-c-hover" onclick="openSite('https://www.behance.net/sumanjlama')"
-                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 97.31 59.47">
-                    <defs>
-                        <style>
-                            .cls-1 {
-                                fill-rule: evenodd;
-                            }
-                        </style>
-                    </defs>
-                    <g id="Layer_2" data-name="Layer 2">
-                        <g id="Layer_1-2" data-name="Layer 1">
-                            <path id="Behance" class="cls-1"
-                                d="M62.18,9.92H88V2.7H62.18V9.92Zm6.1,15.76a11.51,11.51,0,0,0-3.1,6.64h20a9.34,9.34,0,0,0-3.1-6.79,10.46,10.46,0,0,0-6.91-2.3,9.42,9.42,0,0,0-6.94,2.45ZM85.68,16a17.93,17.93,0,0,1,7.68,6.35,20.58,20.58,0,0,1,3.55,8.87,54,54,0,0,1,.39,8.52H64.9c.19,4.3,1.73,7.32,4.66,9.05A12.15,12.15,0,0,0,76,50.38a10.1,10.1,0,0,0,6.45-2,9.27,9.27,0,0,0,2.39-3H96.69q-.48,3.81-4.31,7.76-6,6.26-16.73,6.25A24.75,24.75,0,0,1,60,54.2C55.45,50.68,53.2,45,53.2,37q0-11.15,6.12-17.1t15.9-6a26.12,26.12,0,0,1,10.46,2ZM12,32.47V47.94h14.6a14.67,14.67,0,0,0,6.09-1c2.64-1.27,4-3.67,4-7.24a6.23,6.23,0,0,0-3.82-6.23,15.66,15.66,0,0,0-6-1Zm0-22.4v12.8H26.61A12.45,12.45,0,0,0,33,21.43q2.45-1.44,2.45-5.09c0-2.71-1.08-4.49-3.23-5.36a23.64,23.64,0,0,0-7.11-.91ZM44.64,6.18A14.41,14.41,0,0,1,47.4,15a12.61,12.61,0,0,1-2.78,8.54A14.37,14.37,0,0,1,40,26.88,13.44,13.44,0,0,1,47,32a14.94,14.94,0,0,1,2.34,8.5,16.46,16.46,0,0,1-2.68,9.25,16.16,16.16,0,0,1-4.26,4.57,16.76,16.76,0,0,1-6.79,2.91A42.71,42.71,0,0,1,27.1,58H0V0H29.06q11,.15,15.58,6.18Z" />
-                        </g>
-                    </g>
-                </svg>
-
-                <!-- LINKEDIN ICON -->
-                <svg class="three-icons-mid second-c-hover"
-                    onclick="openSite('https://linkedin.com/in/suman-lama-96b6a9185')"
-                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 73.96 65.75">
-                    <defs>
-                        <style>
-                            .cls-1 {
-                                fill-rule: evenodd;
-                            }
-                        </style>
-                    </defs>
-                    <g id="Layer_2" data-name="Layer 2">
-                        <g id="Layer_1-2" data-name="Layer 1">
-                            <path id="LinkedIn" class="cls-1"
-                                d="M74,65.75H57.61V42.63c0-6.05-2.55-10.18-8.18-10.18a8.22,8.22,0,0,0-7.8,5.48,9.88,9.88,0,0,0-.35,3.65V65.75H25.08s.21-40.94,0-44.67h16.2v7c.95-3.06,6.13-7.44,14.38-7.44,10.25,0,18.3,6.43,18.3,20.26V65.75ZM8.71,15.5H8.6C3.38,15.5,0,12.08,0,7.75S3.48,0,8.81,0s8.58,3.33,8.69,7.74S14.12,15.5,8.71,15.5ZM1.87,21.08H16.28V65.75H1.87V21.08Z" />
-                        </g>
-                    </g>
-                </svg>
-
-                <!-- GITHUB ICON -->
-                <svg class="three-icons-larger second-c-hover" onclick="openSite('https://github.com/sumnjlama')"
-                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72.87 69.78">
-                    <defs>
-                        <style>
-                            .cls-1 {
-                                fill-rule: evenodd;
-                            }
-                        </style>
-                    </defs>
-                    <g id="Layer_2" data-name="Layer 2">
-                        <g id="Layer_1-2" data-name="Layer 1">
-                            <path id="Github" class="cls-1"
-                                d="M36.43,0C16.31,0,0,16,0,35.77A35.84,35.84,0,0,0,24.92,69.71c1.82.33,2.49-.77,2.49-1.72s0-3.1-.05-6.08c-10.14,2.16-12.28-4.8-12.28-4.8-1.65-4.13-4-5.23-4-5.23-3.31-2.22.25-2.18.25-2.18,3.65.26,5.58,3.69,5.58,3.69,3.25,5.47,8.53,3.89,10.6,3a7.58,7.58,0,0,1,2.32-4.78c-8.09-.9-16.6-4-16.6-17.68a13.7,13.7,0,0,1,3.75-9.6,12.57,12.57,0,0,1,.36-9.46s3.06-1,10,3.66a35.26,35.26,0,0,1,18.24,0c7-4.63,10-3.66,10-3.66a12.57,12.57,0,0,1,.36,9.46,13.66,13.66,0,0,1,3.75,9.6c0,13.74-8.52,16.77-16.64,17.65,1.31,1.11,2.48,3.29,2.48,6.63,0,4.78-.05,8.64-.05,9.81,0,1,.66,2.07,2.5,1.72a35.85,35.85,0,0,0,24.9-33.94C72.87,16,56.56,0,36.43,0" />
-                        </g>
-                    </g>
-                </svg>
-            </figure>
-        </section>
 
         <!-- CONTACT FORMS -->
         <section class=" row justify-content-center align-content-center fade-in px-0" id="contact-section">
@@ -351,39 +366,47 @@
             <span class="span-section shadow-up shadow-down contact-background">
             </span>
 
+
             <!-- HEADER -->
-            <div class="col-12 z-ind ">
-                <div class="row justify-content-center text-center mt-4 mt-md-0 px-0 mx-0">
-                    <p id="contact-header">Send me a message:</p>
+            <div class="col-12 z-ind " id="form-wrapper">
+                <div class="row justify-content-center">
+                    <div class="col-12 z-ind">
+                        <div class="row justify-content-center text-center mt-4 mt-md-0 px-0 mx-0">
+                            <p id="contact-header">Send me a message:</p>
+                        </div>
+                    </div>
+
+
+                    <!-- FORMS -->
+                    <form class="col-10 col-md-6 col-xl-4 padding-top-small text-center z-ind mx-0 px-0"
+                        action="https://formspree.io/f/mleonaay" method="POST" autocomplete="off" id="my-form">
+
+                        <!-- FIRST NAME -->
+                        <div><label class="form-labels" for="name-input">Your name</label>
+                            <input id="name-input" class="form-control form-boxes" type="text" name="name" required>
+                        </div>
+
+                        <!-- EMAIL -->
+                        <div><label class="mt-4 form-labels" for="email-input">Email address</label>
+                            <input id="email-input" class="form-control" type="text" name="email" required></div>
+
+                        <!-- MESSAGE TEXTAREA -->
+                        <div><label class="mt-4 form-labels" for="message-box">Message me</label>
+                            <textarea id="message-box" class="form-control" name="message" required></textarea></div>
+
+                        <!-- SEND BUTTON -->
+                        <button class="mt-5 nav-c btn-lg btn-block " type="submit"
+                            id="form-submit-button">Submit</button>
+
+                    </form>
+
+                    <!-- SUBMIT STATUS -->
+                    <div class="col-12 text-center pt-4" id="status"></div>
+
+                    <!-- FOOTER -->
+                    <footer class="col-12 z-ind text-center white-text ">Website made by Suman Lama</footer>
                 </div>
             </div>
-
-            <!-- FORMS -->
-            <form class="col-10 col-md-6 col-xl-4 padding-top-small z-ind mx-0 px-0"
-                action="https://formspree.io/f/mleonaay" method="POST" autocomplete="off" id="my-form">
-
-                <!-- FIRST NAME -->
-                <div><label class="white-text" for="name-input">Your name</label>
-                    <input id="name-input" class="form-control" type="text" name="name" required></div>
-
-                <!-- EMAIL -->
-                <div><label class="mt-4 white-text" for="email-input">Email address</label>
-                    <input id="email-input" class="form-control" type="text" name="email" required></div>
-
-                <!-- MESSAGE TEXTAREA -->
-                <div><label class="mt-4 white-text" for="message-box">Message me</label>
-                    <textarea id="message-box" class="form-control" name="message" required></textarea></div>
-
-                <!-- SEND BUTTON -->
-                <button class="mt-5 nav-c btn-lg btn-block " type="submit" id="form-submit-button">Send</button>
-
-            </form>
-
-            <!-- SUBMIT STATUS -->
-            <div class="col-12 text-center pt-4" id="status"></div>
-
-            <!-- FOOTER -->
-            <footer class="col-12 z-ind text-center white-text ">Website made by Suman Lama</footer>
         </section>
 
         <div class="" id="up-button">
@@ -407,7 +430,7 @@
             </svg>
         </div>
 
-    </div>
+        </section>
 </body>
 
 <!-- JQUERY -->
@@ -421,19 +444,19 @@
     integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg=="
     crossorigin="anonymous"></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.min.js" integrity="sha512-5/OHwmQzDSBS0Ous4/hlYoWLHd06/d2r7LdKZQVBXOA6PvOqWVXtdboiLTU7lQTGyVoKVTNkwi0ol4gHGlw5ww==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.min.js"
+    integrity="sha512-5/OHwmQzDSBS0Ous4/hlYoWLHd06/d2r7LdKZQVBXOA6PvOqWVXtdboiLTU7lQTGyVoKVTNkwi0ol4gHGlw5ww=="
+    crossorigin="anonymous"></script>
 
 <!-- GSAP PLUG IN -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"
     integrity="sha512-1dalHDkG9EtcOmCnoCjiwQ/HEB5SDNqw8d4G2MKoNwjiwMNeBAkudsBCmSlMnXdsH8Bm0mOd3tl/6nL5y0bMaQ=="
     crossorigin="anonymous"></script>
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.1/TweenMax.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.1/TweenMax.min.js"></script>
 
 <!-- CUSTOM JS FILES -->
 <script src="index.js" async defer></script>
-<script src="try.js" async defer></script>
-<script src="scroll.js" async defer></script>
 
 
 </html>
